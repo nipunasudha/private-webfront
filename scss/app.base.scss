@@ -1,0 +1,261 @@
+// $brand-primary: #00bc82;
+$brand-primary: #9365B8;
+$brand-success: #213341;
+$footer-color:#28324E;
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+//GENERAL================================================================
+body {
+    padding-top: 60px;
+    background: $brand-primary;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+// LANG DIV =============================================================
+.lang-div {
+    pointer-events: none;
+    z-index: 999999;
+    position: fixed;
+    bottom: 0px;
+    right: 80px;
+    height: 50px;
+    width: 100px;
+    .lang-menu {
+        pointer-events: auto;
+        position: absolute;
+        bottom: 15px;
+        margin: auto;
+        img {
+            height: 20px;
+            margin: 2px;
+        }
+        button {
+            border-radius: 0px!important;
+            padding: 5px;
+        }
+    }
+}
+
+.lang-menu-mobile {
+    
+    img {
+        height: 20px;
+        margin: 2px 5px;
+       
+    }
+    button {
+        border-radius: 0px!important;
+        padding: 5px;
+        background: none;
+        border: 1px solid darkslategrey
+    }
+}
+// GO TO TOP BUTTON =====================================================
+.go-to-top{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    bottom: 15px;
+    right: 30px;
+    background: black;
+    opacity: 0.35;
+    background-image: url("./../assets/img/arrowdown.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+//NAV BAR================================================================
+.navbar {
+    border-radius: 0 0 20px 20px;
+    //-------------------------------
+    -webkit-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+    //-------------------------------
+    a {
+        //font-weight: bold;
+      
+    }
+    .navbar-brand {
+        padding: 12px 30px;
+    }
+    .btn {
+        font-weight: bold;
+    }
+    .user-propic {
+        height: 30px;
+        border-radius: 100%;
+        margin: 0px 15px 0px 5px;
+    }
+    .dropdown-toggle {
+        @media screen and (min-width: $break-sm+ 1px) {
+            margin-top: 5px;
+            padding: 10px;
+        }
+    }
+    .notification-lg {
+        @media screen and (max-width: $break-sm) {
+            display: none;
+        }
+    }
+    .notification-sm {
+        .dropdown-toggle {
+            margin-top: 0px;
+        }
+        @media screen and (min-width: $break-sm+ 1px) {
+            display: none;
+        }
+    }
+    .notification-icon {
+        height: 30px;
+    }
+    .badge {
+        margin-left: 8px;
+    }
+}
+
+//search-box search-box search-box ===========================
+.search-box-row {
+    @media screen and (max-width: $break-sm) {
+        padding-top: 40px;
+    }
+}
+
+.search-box {
+    .input-group-addon {
+        background: lighten( $brand-success, 10%);
+        border: $brand-success;
+        color: white;
+        &:hover {
+            background: $brand-success;
+        }
+    }
+    input {
+        color: $brand-success;
+    }
+}
+
+.mobile-search-box {
+    width: 75%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+.search-box-lg {
+    @media screen and (min-width: $break-sm+ 1px) {
+        width: 70%;
+        margin: 60px auto;
+    }
+}
+
+.search-box-sm {
+    @media screen and (min-width: $break-sm+ 1px) {
+        width: 60%;
+        margin: 15px 0;
+        margin-right: 20px;
+        margin-left: auto;
+    }
+}
+
+.search-bread-mobile {
+    @media screen and (min-width: $break-sm+ 1px) {
+        display: none;
+    }
+}
+
+.search-box-row {
+    .breadcrumb-div {
+        padding: 0px;
+        margin: 0px;
+        * {
+            color: #ddd;
+            .active {
+                color: white;
+            }
+            background: none;
+        }
+    }
+    .breadcrumb {
+        color: #ddd;
+        @media screen and (min-width: $break-sm+ 1px) {
+            width: 90%;
+            margin: 0px;
+            margin: 14px 0px;
+        }
+        @media screen and (max-width: $break-sm) {
+            width: 80%;
+            margin: auto;
+            border-radius: 10px 10px 0 0;
+            border: none;
+        }
+    }
+}
+
+//=============== MAIN REGION ==============================
+.row-main {
+    padding: 40px 0px;
+    height: 1000px;
+    width: 100%;
+    background: white;
+    .div-advanced-search {
+        background: $brand-primary;
+        opacity: 0.2;
+        height: 400px;
+    }
+    .div-item-container {
+        background: $brand-primary;
+         opacity: 0.4;
+        height: 400px;
+    }
+}
+
+//=============== FOOTER ===========================
+.footer {
+    background: $footer-color;
+    padding: 40px;
+    padding-bottom: 0;
+    .logo-row {
+        .img {
+            height: 40px;
+        }
+    }
+    .content-row {
+        padding: 30px 0 0 0;
+        >div {
+            margin-bottom: 30px;
+        }
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: white;
+        }
+        hr {
+            border-color: grey;
+        }
+        a {
+            color: grey;
+        }
+        .social-icons {
+            padding-top: 10px;
+            >div {
+                padding: 3px;
+            }
+            img {
+                width: 100%;
+                max-width: 40px;
+            }
+        }
+    }
+    .copyright-row {
+        color: grey;
+        padding: 15px;
+    }
+}

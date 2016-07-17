@@ -1,0 +1,182 @@
+body {
+  padding-top: 60px;
+  background: #9365B8;
+  font-family: Roboto;
+  font-weight: 500; }
+
+.lang-div {
+  pointer-events: none;
+  z-index: 999999;
+  position: fixed;
+  bottom: 0px;
+  right: 80px;
+  height: 50px;
+  width: 100px; }
+  .lang-div .lang-menu {
+    pointer-events: auto;
+    position: absolute;
+    bottom: 15px;
+    margin: auto; }
+    .lang-div .lang-menu img {
+      height: 20px;
+      margin: 2px; }
+    .lang-div .lang-menu button {
+      border-radius: 0px !important;
+      padding: 5px; }
+
+.lang-menu-mobile img {
+  height: 20px;
+  margin: 2px 5px; }
+.lang-menu-mobile button {
+  border-radius: 0px !important;
+  padding: 5px;
+  background: none;
+  border: 1px solid darkslategrey; }
+
+.go-to-top {
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  bottom: 15px;
+  right: 30px;
+  background: black;
+  opacity: 0.35;
+  background-image: url("./../assets/img/arrowdown.png");
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .go-to-top:hover {
+    opacity: 0.8; }
+
+.navbar {
+  border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34); }
+  .navbar .navbar-brand {
+    padding: 12px 30px; }
+  .navbar .btn {
+    font-weight: bold; }
+  .navbar .user-propic {
+    height: 30px;
+    border-radius: 100%;
+    margin: 0px 15px 0px 5px; }
+  @media screen and (min-width: 769px) {
+    .navbar .dropdown-toggle {
+      margin-top: 5px;
+      padding: 10px; } }
+  @media screen and (max-width: 768px) {
+    .navbar .notification-lg {
+      display: none; } }
+  .navbar .notification-sm .dropdown-toggle {
+    margin-top: 0px; }
+  @media screen and (min-width: 769px) {
+    .navbar .notification-sm {
+      display: none; } }
+  .navbar .notification-icon {
+    height: 30px; }
+  .navbar .badge {
+    margin-left: 8px; }
+
+@media screen and (max-width: 768px) {
+  .search-box-row {
+    padding-top: 40px; } }
+
+.search-box .input-group-addon {
+  background: #324e63;
+  border: #213341;
+  color: white; }
+  .search-box .input-group-addon:hover {
+    background: #213341; }
+.search-box input {
+  color: #213341; }
+
+.mobile-search-box {
+  width: 75%;
+  margin: 0px auto;
+  margin-bottom: 40px; }
+
+@media screen and (min-width: 769px) {
+  .search-box-lg {
+    width: 70%;
+    margin: 60px auto; } }
+
+@media screen and (min-width: 769px) {
+  .search-box-sm {
+    width: 60%;
+    margin: 15px 0;
+    margin-right: 20px;
+    margin-left: auto; } }
+
+@media screen and (min-width: 769px) {
+  .search-bread-mobile {
+    display: none; } }
+
+.search-box-row .breadcrumb-div {
+  padding: 0px;
+  margin: 0px; }
+  .search-box-row .breadcrumb-div * {
+    color: #ddd;
+    background: none; }
+    .search-box-row .breadcrumb-div * .active {
+      color: white; }
+.search-box-row .breadcrumb {
+  color: #ddd; }
+  @media screen and (min-width: 769px) {
+    .search-box-row .breadcrumb {
+      width: 90%;
+      margin: 0px;
+      margin: 14px 0px; } }
+  @media screen and (max-width: 768px) {
+    .search-box-row .breadcrumb {
+      width: 80%;
+      margin: auto;
+      border-radius: 10px 10px 0 0;
+      border: none; } }
+
+.row-main {
+  padding: 40px 0px;
+  height: 1000px;
+  width: 100%;
+  background: white; }
+  .row-main .div-advanced-search {
+    background: #9365B8;
+    opacity: 0.2;
+    height: 400px; }
+  .row-main .div-item-container {
+    background: #9365B8;
+    opacity: 0.4;
+    height: 400px; }
+
+.footer {
+  background: #28324E;
+  padding: 40px;
+  padding-bottom: 0; }
+  .footer .logo-row .img {
+    height: 40px; }
+  .footer .content-row {
+    padding: 30px 0 0 0; }
+    .footer .content-row > div {
+      margin-bottom: 30px; }
+    .footer .content-row h2,
+    .footer .content-row h3,
+    .footer .content-row h4,
+    .footer .content-row h5 {
+      color: white; }
+    .footer .content-row hr {
+      border-color: grey; }
+    .footer .content-row a {
+      color: grey; }
+    .footer .content-row .social-icons {
+      padding-top: 10px; }
+      .footer .content-row .social-icons > div {
+        padding: 3px; }
+      .footer .content-row .social-icons img {
+        width: 100%;
+        max-width: 40px; }
+  .footer .copyright-row {
+    color: grey;
+    padding: 15px; }
+
+/*# sourceMappingURL=app.base.css.map */
