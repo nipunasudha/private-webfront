@@ -1,0 +1,75 @@
+    // $brand-primary: #00bc82;
+$brand-primary: #8BC34A;
+$brand-success: #213341;
+$footer-color:#28324E;
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+//---------------------------------
+.dashboard {
+    .navigation {
+        color: white;
+        padding: 20px 0;
+        height: 1000px;
+        background: dodgerblue;
+        .nav-table {
+            width: 100%;
+        }
+        .nav-row {
+            border: 1px solid black;
+            height: 60px;
+            img {
+                width: 80%;
+                max-width: 50px;
+            }
+            td {
+                padding: 10px 0;
+            }
+            .nav-img {
+                padding-left: 10%;
+            }
+            &:hover {
+                background-color: darkblue;
+            }
+        }
+    }
+    .dashboard-body {
+        height: 1000px;
+        background: darkred;
+    }
+}
+
+//================ COMMON =============
+//=============== SUMMARY ==============
+.dash-summary {
+    .title {
+        h3 {
+            color: white;
+            text-align: center;
+        }
+    }
+    .summary-tile {
+        padding: 40px;
+        .box {
+            height: 150px;
+            width: 100%;
+            background: red;
+        }
+    }
+}
+
+//=============== SHORTLISTS ==============
+.dash-short {
+    .title {
+        h3 {
+            color: white;
+            text-align: center;
+        }
+    }
+  
+    .tabs *{
+        color: white;
+        
+    }
+}
