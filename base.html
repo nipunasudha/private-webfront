@@ -7,9 +7,20 @@
     <title>Home Base</title>
     <link rel="stylesheet" type="text/css" href="./tools/custom-Bootstrap/css/bootstrap_custom.css">
     <link rel="stylesheet" type="text/css" href="css/app.base.css">
+
     <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,100italic,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+    <link rel="import" href="./footer.html">
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+
 </head>
 <link rel="shortcut icon" type="image/x-icon" href="./assets/img/J_logo_dark.png" />
 
@@ -28,7 +39,7 @@
         </div>
     </div>
 
-<div class="go-to-top"></div>
+    <div class="go-to-top"></div>
 
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -60,7 +71,7 @@
                     <!--desktop version-->
                     <li class="dropdown notification-lg">
 
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="notification-icon" src="./assets/img/notification_icon_bell_purple.png"> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="notification-icon" src="./assets/img/notification_icon_bell_dark.png"> <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Inbox <span class="badge pull-right">4</span></a></li>
                             <li><a href="#">Profile Views<span class="badge pull-right">0</span></a></li>
@@ -86,7 +97,7 @@
 
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                  
+
                     <li class="dropdown">
 
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user-propic" src="./assets/img/dummy/user_profile_for_home.jpg">HELLO PRABOD <span class="caret"></span></a>
@@ -107,7 +118,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <div class="container">
+    <div class="container search-container">
 
         <div class="row search-box-row">
             <div class="search-bread">
@@ -147,10 +158,34 @@
 
     </div>
     <div class="row-main">
-
         <div class="container">
-            <div class="col-md-4 div-advanced-search"></div>
-            <div class="col-md-8 div-item-container"></div>
+<input type="button"  class="btn btn-primary" onclick="toggleslide()" value="">
+            <div class="content row">
+                <link rel="stylesheet" type="text/css" href="./css/app.advanced-search.css">
+
+
+
+
+                <div class="row">
+                    <div class="left-div col-md-3">
+                        <input type="button" name="" class="btn btn-primary" value="">
+                    </div>
+                    <div class="right-div col-md-9"></div>
+                </div>
+
+
+
+
+
+                <script src="./js/app.advanced-search.js"></script>
+
+
+
+
+
+
+            </div>
+
 
 
         </div>
@@ -158,13 +193,21 @@
 
     </div>
 
-   <!--footer goes here-->
 
-
+    <!--footer STARTS here-->
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+        // Grab DOM from warning.html's document.
+        var el = content.querySelector('footer');
+        document.body.appendChild(el.cloneNode(true));
+    </script>
+    <!--footer ENDS here-->
 </body>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
 <script src="js/app.base.js"></script>
+
+
 
 </html>

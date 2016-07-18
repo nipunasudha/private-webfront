@@ -1,5 +1,5 @@
 // $brand-primary: #00bc82;
-$brand-primary: #9365B8;
+$brand-primary: #8BC34A;
 $brand-success: #213341;
 $footer-color:#28324E;
 $break-xs: 480px;
@@ -12,6 +12,16 @@ body {
     background: $brand-primary;
     font-family: Roboto;
     font-weight: 500;
+}
+//FORM STYLING
+.form-group,.checkbox,.radio,.help-block{
+color:$brand-success;
+}
+.form-control{
+    color: black;
+}
+.help-block{
+    opacity: 0.3;
 }
 
 // LANG DIV =============================================================
@@ -200,8 +210,9 @@ body {
 
 //=============== MAIN REGION ==============================
 .row-main {
+    overflow-x: hidden;
     padding: 40px 0px;
-    height: 1000px;
+   margin: 0px;
     width: 100%;
     background: white;
     .div-advanced-search {
@@ -218,6 +229,7 @@ body {
 
 //=============== FOOTER ===========================
 .footer {
+    
     background: $footer-color;
     padding: 40px;
     padding-bottom: 0;
