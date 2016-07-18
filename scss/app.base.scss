@@ -11,16 +11,22 @@ body {
     padding-top: 60px;
     background: $brand-primary;
     font-family: Roboto;
-    font-weight: 500;
+    //font-weight: 500;
 }
+
 //FORM STYLING
-.form-group,.checkbox,.radio,.help-block{
-color:$brand-success;
+.form-group,
+.checkbox,
+.radio,
+.help-block {
+    color: $brand-success;
 }
-.form-control{
+
+.form-control {
     color: black;
 }
-.help-block{
+
+.help-block {
     opacity: 0.3;
 }
 
@@ -50,11 +56,9 @@ color:$brand-success;
 }
 
 .lang-menu-mobile {
-    
     img {
         height: 20px;
         margin: 2px 5px;
-       
     }
     button {
         border-radius: 0px!important;
@@ -63,8 +67,10 @@ color:$brand-success;
         border: 1px solid darkslategrey
     }
 }
+
 // GO TO TOP BUTTON =====================================================
-.go-to-top{
+.go-to-top {
+    z-index: 99999999;
     position: fixed;
     height: 60px;
     width: 60px;
@@ -77,10 +83,11 @@ color:$brand-success;
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    &:hover{
+    &:hover {
         opacity: 0.8;
     }
 }
+
 //NAV BAR================================================================
 .navbar {
     border-radius: 0 0 20px 20px;
@@ -91,7 +98,6 @@ color:$brand-success;
     //-------------------------------
     a {
         //font-weight: bold;
-      
     }
     .navbar-brand {
         padding: 12px 30px;
@@ -212,7 +218,7 @@ color:$brand-success;
 .row-main {
     overflow-x: hidden;
     padding: 40px 0px;
-   margin: 0px;
+    margin: 0px;
     width: 100%;
     background: white;
     .div-advanced-search {
@@ -222,14 +228,13 @@ color:$brand-success;
     }
     .div-item-container {
         background: $brand-primary;
-         opacity: 0.4;
+        opacity: 0.4;
         height: 400px;
     }
 }
 
 //=============== FOOTER ===========================
 .footer {
-    
     background: $footer-color;
     padding: 40px;
     padding-bottom: 0;
