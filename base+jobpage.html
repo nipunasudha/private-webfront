@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Home Base</title>
+    <link rel="stylesheet" type="text/css" href="./tools/custom-Bootstrap/css/bootstrap_custom.css">
+    <link rel="stylesheet" type="text/css" href="css/app.base.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,100italic,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+    <link rel="import" href="./footer.html">
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/mobile-hide-show.js"></script>
+
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="./assets/img/J_logo_dark.png" />
+
+<body>
+    <div class="lang-div">
+
+        <div class="dropup lang-menu">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span> <img src="./assets/img/lang/lang-sinhala.jpg" alt=""></span>
+    <span class="caret"></span>
+  </button>
+            <ul class="dropdown-menu" aria-labelledby="lang-menu">
+                <li><a href="#"><span> <img src="./assets/img/lang/lang-sinhala.jpg" alt=""></span>English</a></li>
+                <li><a href="#"><span> <img src="./assets/img/lang/lang-english.jpg" alt=""></span>Sinhala</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="go-to-top"></div>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/J LOGO_with_name_LQ.png" height="36" alt="Logo">
+
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">DASHBOARD</a></li>
+                    <li><a href="#">RESUME</a></li>
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right notification-ul">
+                    <!--desktop version-->
+                    <li class="dropdown notification-lg">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="notification-icon" src="./assets/img/notification_icon_bell_dark.png"> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox <span class="badge pull-right">4</span></a></li>
+                            <li><a href="#">Profile Views<span class="badge pull-right">0</span></a></li>
+                            <li><a href="#">Flags<span class="badge pull-right">11</span></a></li>
+                        </ul>
+                    </li>
+                    <!--mobile version-->
+                    <li class="dropdown notification-sm">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTIFICATIONS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox<span class="badge pull-right">4</span></a></li>
+                            <li><a href="#">Profile Views<span class="badge pull-right">0</span></a></li>
+                            <li><a href="#">Flags<span class="badge pull-right">11</span></a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+                <div class="navbar-form navbar-right">
+                    <button class="btn btn-primary">LOIGIN</button>
+                    <button class="btn btn-success">SIGNUP</button>
+
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user-propic" src="./assets/img/dummy/user_profile_for_home.jpg">HELLO PRABOD <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">MailBox</a></li>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Report a Problem</a></li>
+
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container search-container">
+
+        <div class="row search-box-row">
+            <div class="search-bread">
+                <div class="col-sm-6 breadcrumb-div">
+
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li class="active">Data</li>
+                    </ol>
+                </div>
+                <div class="col-sm-6 search-min-div">
+
+                    <div class="input-group input-group-sm search-box search-box-sm">
+
+                        <input type="text" class="form-control" placeholder="Search for Jobs!" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span> </span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="search-only">
+                <!--switch between lg & sm to resize-->
+                <div class="input-group input-group-lg search-box search-box-lg">
+
+                    <input type="text" class="form-control" placeholder="Search for Jobs!" aria-describedby="sizing-addon1">
+                    <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span> </span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="row-main">
+        <div class="container">
+
+
+            <!--==================== START ================-->
+
+
+
+
+
+            <div class="content row">
+                <link rel="stylesheet" type="text/css" href="./css/app.jobpage.css">
+                <div class="resume-toolbar row">
+
+                    <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-download"></span>Download</button>
+                    <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-print"></span>Print</button>
+                    <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-list-alt"></span>View Company Profile</button>
+                    <button class="btn btn-success btn-pin pull-right">
+                        <span class="glyphicon glyphicon-pushpin"></span>
+                    <span class="pin-text" >Pin</span>
+                    <span class="pin-text" hidden>Pinned</span>
+                    
+                    </button>
+
+
+                </div>
+                <div class="resume row">
+
+                    <div class="col-md-7  col-md-push-5 resume-colomn resume-right">
+
+
+
+
+                        <div class="left-row name-row">
+                            <h1>ANDROID APP DEVELOPER</h1>
+                            <h4>Posted on - Monday 7th of July, 2016</h4>
+                        </div>
+
+                        <hr>
+
+
+
+
+
+
+
+                        <div class="row right-row skills-row">
+                            <div class="title">JOB DETAILS
+                                <span class="switch-md-d glyphicon glyphicon-briefcase pull-right" aria-hidden="true"></span>
+                            </div>
+                            <div class="data">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <td>Job Location</td>
+                                        <td>Miriswatte, Matara, Sri Lanka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Job Category</td>
+                                        <td>Sales Representative</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Job Type</td>
+                                        <td>Full time</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Salary Range</td>
+                                        <td>Rs.30,000 upwards</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Vacancies</td>
+                                        <td>4</td>
+
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row right-row requirements-row switch-md-m">
+                            <div class="title">REQUIREMENTS
+                                <span class="switch-md-d glyphicon glyphicon-briefcase pull-right" aria-hidden="true"></span>
+                            </div>
+                            <div class="data">
+
+                                <table class="table table-striped">
+                                    <tr>
+                                        <td>Educational Qualifications</td>
+                                        <td>Miriswatte, Matara, Sri Lanka. Miriswatte, Matara, Sri Lanka.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Skills Required</td>
+                                        <td>
+
+                                            <div class="tag-list">
+                                                <ul class="list-inline">
+                                                    <li class="rtags">Adobe Photoshop</li>
+                                                    <li class="rtags">Artistic Drawing</li>
+                                                    <li class="rtags">Running</li>
+                                                    <li class="rtags">Web Development</li>
+                                                    <li class="rtags">Artistic Drawing</li>
+
+                                                </ul>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Languages Required</td>
+                                        <td>
+                                            <div class="tag-list">
+                                                <ul class="list-inline">
+                                                    <li class="rtags">English</li>
+                                                    <li class="rtags">Sinhala</li>
+                                                    <li class="rtags">Korean</li>
+
+                                                </ul>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+
+                                </table>
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row right-row  contact-row">
+                            <div class="title">DESCRIPTION
+                                <span class="switch-md-d glyphicon glyphicon-list pull-right" aria-hidden="true"></span>
+                            </div>
+                            <div class="data">
+                                <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+                                    consequences, or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+                                    who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
+                                    it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical
+                                    exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that <br><br> Produces noivial
+                                    example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences,
+                                    or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to
+                                    enjoy a pleasure that has no
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row right-row languages-row">
+                            <div class="title">ADDITIONAL INFO
+                                <span class="switch-md-d glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
+                            </div>
+                            <div class="data">
+                                <h4>Attachments</h4>
+                                <table class="attachments-table table table-striped">
+                                    <tr>
+                                        <td><img src="./assets/jobpage.img/fakeposter.jpg" alt=""></td>
+                                        <td><a href="http://publicationsonline.carnegiescience.edu/publications_online/Ceramics_arch.pdf">
+                                        Poster (JPG)
+                                        </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./assets/jobpage.img/pdficon.png" alt=""></td>
+                                        <td><a href="http://publicationsonline.carnegiescience.edu/publications_online/Ceramics_arch.pdf">
+                                        Additional Information 2016 Edition (PDF)
+                                        </a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./assets/jobpage.img/linkicon.png" alt=""></td>
+                                        <td><a href="http://publicationsonline.carnegiescience.edu/publications_online/Ceramics_arch.pdf">
+                                        Payments chart (Link)
+                                        </a></td>
+
+                                    </tr>
+
+
+                                </table>
+
+                            </div>
+                        </div>
+                        <hr>
+
+
+
+
+                    </div>
+
+                    <div class="col-md-5 col-md-pull-7 resume-colomn resume-left">
+                        <div class="row left-row insights-row">
+                            <table>
+                                <tr>
+                                    <td class="five-star">
+                                        Company Rating : <span>4.7</span>
+
+                                        <div class="star-row">
+
+                                            <div>
+                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
+                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
+                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
+                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
+                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
+
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10,147 People viewed this job</td>
+                                </tr>
+                                <tr>
+                                    <td>170 People pinned this</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row left-row  contact-row">
+                            <div class="title">COMPANY DETAILS</div>
+                            <div class="data">
+                                <div class="row company-name">
+                                    <h3>Deen Brothers LTD</h3>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td><img src="./assets/resume.img/icons/address-resume.png" alt=""></td>
+                                        <td>Kalidasa rd, Matara, Sri Lanka</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./assets/resume.img/icons/phone-resume.png" alt=""></td>
+                                        <td>+9471 435 5447 / +9441 2285 285</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td><img src="./assets/resume.img/icons/email-resume.png" alt=""></td>
+                                        <td>info@deenltd.com</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row left-row languages-row switch-md-d">
+                            <div class="title">LANGUAGES REQUIRED</div>
+                            <div class="data">
+                                <ul>
+                                    <li class="btn btn-primary">English</li>
+                                    <li class="btn btn-primary">Sinhala</li>
+                                    <li class="btn btn-primary">Korean</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="row left-row skills-row  switch-md-d">
+                            <div class="title">SKILLS REQUIRED</div>
+                            <div class="data">
+                                <ul>
+
+                                    <li class="btn btn-primary">Adobe Photoshop</li>
+                                    <li class="btn btn-primary">Software Engineering</li>
+                                    <li class="btn btn-primary">Web Development</li>
+                                    <li class="btn btn-primary">Artistic Drawing</li>
+                                    <li class="btn btn-primary">Running</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <script src="./js/app.jobpage.js"></script>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <!--footer STARTS here-->
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+        // Grab DOM from warning.html's document.
+        var el = content.querySelector('footer');
+        document.body.appendChild(el.cloneNode(true));
+    </script>
+    <!--footer ENDS here-->
+</body>
+
+<script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
+<script src="js/app.base.js"></script>
+
+
+
+</html>
