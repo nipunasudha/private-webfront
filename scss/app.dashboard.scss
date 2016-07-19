@@ -1,75 +1,126 @@
     // $brand-primary: #00bc82;
-$brand-primary: #8BC34A;
-$brand-success: #213341;
-$footer-color:#28324E;
-$break-xs: 480px;
-$break-sm: 768px;
-$break-md: 992px;
-$break-lg: 1200px;
-//---------------------------------
-.dashboard {
-    .navigation {
-        color: white;
-        padding: 20px 0;
-        height: 1000px;
-        background: dodgerblue;
-        .nav-table {
-            width: 100%;
-        }
-        .nav-row {
-            border: 1px solid black;
-            height: 60px;
-            img {
-                width: 80%;
-                max-width: 50px;
-            }
-            td {
-                padding: 10px 0;
-            }
-            .nav-img {
-                padding-left: 10%;
-            }
-            &:hover {
-                background-color: darkblue;
-            }
-        }
-    }
-    .dashboard-body {
-        height: 1000px;
-        background: darkred;
-    }
-}
-
-//================ COMMON =============
-//=============== SUMMARY ==============
-.dash-summary {
-    .title {
-        h3 {
+    $brand-primary: #8BC34A;
+    $brand-success: #213341;
+    $footer-color:#28324E;
+    $gray-background:#eceff1;
+    $break-xs: 480px;
+    $break-sm: 768px;
+    $break-md: 992px;
+    $break-lg: 1200px;
+    //---------------------------------
+    //================ COMMON =============
+    .dashboard {
+        .navigation {
             color: white;
-            text-align: center;
+            padding: 20px 0;
+            height: 1000px;
+            background: $footer-color;
+            .nav-table {
+                width: 100%;
+            }
+            .nav-row {
+                cursor: pointer;
+                border: 1px solid black;
+                &.active {
+                    background: lighten($color: $footer-color, $amount: 25%);
+                    &:hover {
+                        background: lighten($color: $footer-color, $amount: 25%);
+                    }
+                }
+                img {
+                    width: 80%;
+                    max-width: 50px;
+                }
+                td {
+                    padding: 10px 0;
+                }
+                .nav-img {
+                    padding-left: 10%;
+                }
+                &:hover {
+                    background-color: lighten($color: $footer-color, $amount: 10%);
+                }
+            }
+        }
+        .dashboard-body {
+            color: black;
+            height: 1000px;
+            background: $gray-background;
+            table {
+                table-layout: fixed;
+                word-wrap: break-word;
+                @media screen and (max-width: $break-sm) {
+                    font-size: 13px;
+                }
+            }
         }
     }
-    .summary-tile {
-        padding: 40px;
-        .box {
-            height: 150px;
-            width: 100%;
-            background: red;
+    
+    //=============== SUMMARY ==============
+    .dash-summary {
+        .title {
+            h3 {
+                text-align: center;
+            }
+        }
+        .summary-tile {
+            padding: 40px;
+            .box {
+                height: 150px;
+                width: 100%;
+                background: red;
+            }
         }
     }
-}
-
-//=============== SHORTLISTS ==============
-.dash-short {
-    .title {
-        h3 {
-            color: white;
-            text-align: center;
+    
+    //=============== SHORTLISTS & INTERVIEWS ==============
+    .dash-short {
+        .title {
+            h3 {
+                text-align: center;
+            }
+        }
+        .tabs {
+            .active {
+                a {
+                    font-weight: bold;
+                    background-color: white;
+                    // background-color: lighten($color: $brand-primary, $amount: 35%);
+                    color: black;
+                    &:focus {
+                        // background-color: lighten($color: $brand-primary, $amount: 35%);
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+            a {
+                background-color: lighten($color: $brand-primary, $amount: 20%);
+                &:focus {
+                    background-color: lighten($color: $brand-primary, $amount: 20%);
+                }
+            }
+        }
+        .table-div {
+            table {
+                width: 100%;
+                tr {
+                    background: white;
+                    border-bottom: 1px solid gray;
+                    th {
+                        background-color: lighten($color: $brand-primary, $amount: 35%);
+                    }
+                    td {
+                        vertical-align: middle;
+                        padding: 10px;
+                    }
+                    .date {
+                        width: 100px;
+                    }
+                    &:hover {
+                        background-color: lighten($color: $brand-primary, $amount: 40%);
+                    }
+                }
+            }
         }
     }
-  
-    .tabs *{
-        color: white;
-        
-    }
-}
