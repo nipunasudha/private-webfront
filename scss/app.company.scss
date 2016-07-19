@@ -10,19 +10,20 @@ $break-md: 992px;
 $break-lg: 1200px;
 // =========== GENERAL =======================
 $propic-size:200px;
-.btn-pinned,.btn-pinned:focus {
+.btn-pinned,
+.btn-pinned:focus {
     outline: none;
     background: $pin-color;
     color: white;
     border-color: white;
     &:hover {
         background: darken($color: $pin-color, $amount: 5%);
-    color: white;
-    
+        color: white;
     }
 }
 
-.btn-pin, .btn-pin:focus {
+.btn-pin,
+.btn-pin:focus {
     outline: none;
     background: white;
     color: $pin-color;
@@ -41,11 +42,12 @@ $propic-size:200px;
             box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.16);
         }
     }
-    .resume-colomn {}
+    
     .resume-left {
         padding: 0px;
         background: $footer-color;
         .insights-row {
+            font-weight: 300;
             * {
                 font-size: 18px;
             }
@@ -55,16 +57,8 @@ $propic-size:200px;
                 .five-star {
                     padding-bottom: 20px;
                 }
-            }
-            .star-row {
-                padding: 0;
-                padding-top: 15px;
-                width: 50%;
-                img {
-                    width: 100%;
-                }
-                .star {
-                    padding: 0;
+                #rateYo {
+                    padding-top: 10px;
                 }
             }
         }
@@ -75,6 +69,15 @@ $propic-size:200px;
             margin: 0px;
             &:not(.picture-row) {
                 //height: 150px;
+            }
+            .company-logo{
+                margin-bottom: 25px;
+                img{
+                    width: 50%;
+                    
+                    border-radius: 10px;
+                }
+                
             }
             .title {
                 font-weight: 500;
@@ -112,6 +115,12 @@ $propic-size:200px;
                 }
             }
         }
+        .insights-row{
+             .title {
+                background: #fe7974;
+                
+            }
+        }
         .contact-row {
             .title {
                 background: #fe7974;
@@ -131,20 +140,7 @@ $propic-size:200px;
                 }
             }
         }
-        .skills-row {
-            .title {
-                background: #adc549;
-            }
-            .data {
-                li {
-                    margin: 5px 2px;
-                    background: lighten($color: darkgreen, $amount: 70%);
-                    border: none;
-                    border-radius: 25px;
-                    color: $brand-success;
-                }
-            }
-        }
+        
     }
     .resume-right {
         padding: 55px;
@@ -196,6 +192,9 @@ $propic-size:200px;
                     height: 60px;
                 }
             }
+            .table-hover{
+                cursor: pointer;
+            }
         }
     }
 }
@@ -208,13 +207,20 @@ $propic-size:200px;
 }
 
 .resume-toolbar {
+    @media screen and (max-width: $break-sm) {
+        margin: 0;
+    }
     padding: 15px;
-    height: 70px;
+    padding-bottom: 5px;
+    // height: 70px;
     background: lighten($color: $brand-primary, $amount: 35%);
     .btn {
         margin-left: 10px;
+        margin-bottom: 10px;
         .glyphicon {
             margin-right: 10px;
         }
     }
 }
+
+

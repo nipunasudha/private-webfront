@@ -91,17 +91,17 @@ body {
 //NAV BAR================================================================
 .navbar {
     border-radius: 0 0 20px 20px;
-    //-------------------------------
-    -webkit-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
-    -moz-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
-    box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
-    //-------------------------------
+    // //-------------------------------
+    //  -webkit-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+    //  -moz-box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+    //  box-shadow: 0px 0px 66px -7px rgba(0, 0, 0, 0.34);
+    // //-------------------------------
     a {
         //font-weight: bold;
     }
     .navbar-brand {
         padding: 12px 30px;
-    }
+     }
     .btn {
         font-weight: bold;
     }
@@ -275,4 +275,14 @@ body {
         color: grey;
         padding: 15px;
     }
+}
+
+//PERFORMANCE IMPROVEMENT
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .35s ease;
+       -o-transition: height .35s ease;
+          transition: height .35s ease;
 }

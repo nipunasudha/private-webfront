@@ -160,11 +160,15 @@ $propic-size:200px;
 }
 
 .resume-toolbar{
-    padding: 15px;
-    height: 70px;
+     @media screen and (max-width: $break-sm) {
+        margin: 0;
+    }
+     padding: 15px;
+    padding-bottom: 5px;
     background: lighten($color: $brand-primary, $amount: 35%);
 .btn{
-    margin-left: 10px;
+     margin-left: 10px;
+        margin-bottom: 10px;
     .glyphicon{
         margin-right: 10px;
     }

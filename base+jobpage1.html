@@ -7,6 +7,7 @@
     <title>Home Base</title>
     <link rel="stylesheet" type="text/css" href="./tools/custom-Bootstrap/css/bootstrap_custom.css">
     <link rel="stylesheet" type="text/css" href="css/app.base.css">
+    <link rel="stylesheet" type="text/css" href="./tools/rateyo/jquery.rateyo.min.css">
 
     <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
 
@@ -163,7 +164,22 @@
 
             <!--==================== START ================-->
 
+            <!--loading RATE-YO plugin-->
+            <script>
+                $(function() {
+                    $('#rateYo').rateYo({
+                        rating: 3.6,
+                        normalFill: "rgba(0,0,0,0.4)",
+                        ratedFill: "#FFEB3B",
+                        halfStar: true,
+                        onSet: function(rating, rateYoInstance) {
+                            $('#my-rating').html("Your Rating : " + rating)
 
+                        }
+                    })
+                })
+            </script>
+            <!--loading RATE-YO plugin-->
 
 
 
@@ -173,6 +189,7 @@
 
                     <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-download"></span>Download</button>
                     <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-print"></span>Print</button>
+                    <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-pencil"></span>Edit</button>
                     <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-list-alt"></span>View Company Profile</button>
                     <button class="btn btn-success btn-pin pull-right">
                         <span class="glyphicon glyphicon-pushpin"></span>
@@ -351,20 +368,10 @@
                             <table>
                                 <tr>
                                     <td class="five-star">
-                                        Company Rating : <span>4.7</span>
+                                        Company Rating : 4.7 (142)<br>
+                                        <span id="my-rating">Click to Rate</span>
+                                        <div id="rateYo"></div>
 
-                                        <div class="star-row">
-
-                                            <div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-
-                                            </div>
-
-                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -474,6 +481,7 @@
 </body>
 
 <script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
+<script src="./tools/rateyo/jquery.rateyo.min.js"></script>
 <script src="js/app.base.js"></script>
 
 

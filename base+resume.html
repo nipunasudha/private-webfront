@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Home Base</title>
+    <link rel="stylesheet" type="text/css" href="./tools/custom-Bootstrap/css/bootstrap_custom.css">
+    <link rel="stylesheet" type="text/css" href="css/app.base.css">
+    <link rel="stylesheet" type="text/css" href="./tools/rateyo/jquery.rateyo.min.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,100italic,300,700' rel='stylesheet' type='text/css'>
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+    <link rel="import" href="./footer.html">
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/mobile-hide-show.js"></script>
+
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="./assets/img/J_logo_dark.png" />
+
+<body>
+    <div class="lang-div">
+
+        <div class="dropup lang-menu">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span> <img src="./assets/img/lang/lang-sinhala.jpg" alt=""></span>
+    <span class="caret"></span>
+  </button>
+            <ul class="dropdown-menu" aria-labelledby="lang-menu">
+                <li><a href="#"><span> <img src="./assets/img/lang/lang-sinhala.jpg" alt=""></span>English</a></li>
+                <li><a href="#"><span> <img src="./assets/img/lang/lang-english.jpg" alt=""></span>Sinhala</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="go-to-top"></div>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/J LOGO_with_name_LQ.png" height="36" alt="Logo">
+
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">DASHBOARD</a></li>
+                    <li><a href="#">RESUME</a></li>
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right notification-ul">
+                    <!--desktop version-->
+                    <li class="dropdown notification-lg">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="notification-icon" src="./assets/img/notification_icon_bell_dark.png"> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox <span class="badge pull-right">4</span></a></li>
+                            <li><a href="#">Profile Views<span class="badge pull-right">0</span></a></li>
+                            <li><a href="#">Flags<span class="badge pull-right">11</span></a></li>
+                        </ul>
+                    </li>
+                    <!--mobile version-->
+                    <li class="dropdown notification-sm">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTIFICATIONS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox<span class="badge pull-right">4</span></a></li>
+                            <li><a href="#">Profile Views<span class="badge pull-right">0</span></a></li>
+                            <li><a href="#">Flags<span class="badge pull-right">11</span></a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+                <div class="navbar-form navbar-right">
+                    <button class="btn btn-primary">LOIGIN</button>
+                    <button class="btn btn-success">SIGNUP</button>
+
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user-propic" src="./assets/img/dummy/user_profile_for_home.jpg">HELLO PRABOD <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">MailBox</a></li>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Report a Problem</a></li>
+
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container search-container">
+
+        <div class="row search-box-row">
+            <div class="search-bread">
+                <div class="col-sm-6 breadcrumb-div">
+
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li class="active">Data</li>
+                    </ol>
+                </div>
+                <div class="col-sm-6 search-min-div">
+
+                    <div class="input-group input-group-sm search-box search-box-sm">
+
+                        <input type="text" class="form-control" placeholder="Search for Jobs!" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span> </span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="search-only">
+                <!--switch between lg & sm to resize-->
+                <div class="input-group input-group-lg search-box search-box-lg">
+
+                    <input type="text" class="form-control" placeholder="Search for Jobs!" aria-describedby="sizing-addon1">
+                    <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span> </span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="row-main">
+        <div class="container">
+
+
+            <!--==================== START ================-->
+
+       <div class="content row">
+    <link rel="stylesheet" type="text/css" href="./css/app.resume.css">
+    <div class="resume-toolbar row">
+
+        <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-download"></span>Download</button>
+        <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-print"></span>Print</button>
+        <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-pencil"></span>Edit</button>
+
+    </div>
+    <div class="resume row">
+        <div class="col-md-5 resume-colomn resume-left">
+            <div class="row left-row picture-row">
+                <div class="pic-frame">
+
+                </div>
+            </div>
+            <div class="row left-row  contact-row">
+                <div class="title">CONTACT</div>
+                <div class="data">
+                    <!--<ul>
+                                    <li><span><img src="./assets/resume.img/icons/email-resume.png" height="60" alt=""></span>This is content</li>
+                                    <li>This is content</li>
+                                    <li>This is content</li>
+
+                                </ul>-->
+                    <table>
+                        <tr>
+                            <td><img src="./assets/resume.img/icons/address-resume.png" alt=""></td>
+                            <td>Sisiragiri, Hettiyawala Puhulwella, thawa kohehari</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/resume.img/icons/phone-resume.png" alt=""></td>
+                            <td>+9471 435 5447 / +9441 2285 285</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="./assets/resume.img/icons/linkedin-resume.png" alt=""></td>
+                            <td>www.linkedin.com/in/</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/resume.img/icons/facebook-resume.png" alt=""></td>
+                            <td>www.facebook.com/nipunapro</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/resume.img/icons/twitter-resume.png" alt=""></td>
+                            <td>www.twitter.com/profiles/nipunapro</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/resume.img/icons/skype-resume.png" alt=""></td>
+                            <td>/nipunasudha</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row left-row languages-row">
+                <div class="title">LANGUAGES</div>
+                <div class="data">
+                    <ul>
+                        <li class="btn btn-primary">English</li>
+                        <li class="btn btn-primary">Sinhala</li>
+                        <li class="btn btn-primary">Korean</li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row left-row skills-row">
+                <div class="title">SKILLS</div>
+                <div class="data">
+                    <ul>
+
+                        <li class="btn btn-primary">Adobe Photoshop</li>
+                        <li class="btn btn-primary">Software Engineering</li>
+                        <li class="btn btn-primary">Web Development</li>
+                        <li class="btn btn-primary">Artistic Drawing</li>
+                        <li class="btn btn-primary">Running</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-7 resume-colomn resume-right">
+
+
+
+
+            <div class="left-row name-row">
+                <h1>PRABOD RATHNAYAKA</h1>
+                <h4>Our backend developer, seeking for a job.</h4>
+            </div>
+
+            <hr>
+
+
+
+
+
+            <div class="row right-row  contact-row">
+                <div class="title">PERSONAL STATEMENT
+                    <span class="glyphicon glyphicon-user pull-right" aria-hidden="true"></span>
+                </div>
+                <div class="data">
+                    <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences,
+                        or one who avoids a pain that produces no resultant pleasure</p>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row right-row skills-row">
+                <div class="title">WORK EXPERIENCES
+                    <span class="glyphicon glyphicon-briefcase pull-right" aria-hidden="true"></span>
+                </div>
+                <div class="data">
+                    <h4>Executive Manager at WSO2 - Colombo</h4>
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Job Role</td>
+                            <td>Executive Manager</td>
+                        </tr>
+                        <tr>
+                            <td>Company</td>
+                            <td>WSO2 - Colombo</td>
+
+                        </tr>
+                        <tr>
+                            <td>Industry</td>
+                            <td>Software Development</td>
+
+                        </tr>
+                        <tr>
+                            <td>Work Period</td>
+                            <td>2012 MAR - 2015 DEC</td>
+
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</td>
+
+                        </tr>
+
+                    </table>
+                    <hr>
+                    <h4>Senior Manager at Virtusa - Colombo</h4>
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Job Role</td>
+                            <td>Senior Manager</td>
+                        </tr>
+                        <tr>
+                            <td>Company</td>
+                            <td>Virtusa - Colombo</td>
+
+                        </tr>
+                        <tr>
+                            <td>Industry</td>
+                            <td>Software Development</td>
+
+                        </tr>
+                        <tr>
+                            <td>Work Period</td>
+                            <td>2011 JAN - 2015 JUN</td>
+
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row right-row languages-row">
+                <div class="title">HIGHER EDUCATION
+                    <span class="glyphicon glyphicon-education pull-right" aria-hidden="true"></span>
+                </div>
+                <div class="data">
+                    <h4>University of Moratuwa (2011-2015)</h4>
+                    <table class="table table-striped">
+
+                        <tr>
+                            <td>Degree/Course</td>
+                            <td>BSc. Engineering (hons)</td>
+
+                        </tr>
+                        <tr>
+                            <td>Field of Study</td>
+                            <td>Software Engineering</td>
+
+                        </tr>
+                        <tr>
+                            <td>Grade / GPA</td>
+                            <td>3.4 </td>
+
+                        </tr>
+                        <tr>
+                            <td>Activities</td>
+                            <td>Sports etc<br>Fun stuff<br> Union member </td>
+
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                            </td>
+
+                        </tr>
+
+                    </table>
+                    <hr>
+                    <h4>University of Moratuwa (2011-2015)</h4>
+                    <table class="table table-striped">
+
+                        <tr>
+                            <td>Degree/Course</td>
+                            <td>BSc. Engineering (hons)</td>
+
+                        </tr>
+                        <tr>
+                            <td>Field of Study</td>
+                            <td>Software Engineering</td>
+
+                        </tr>
+                        <tr>
+                            <td>Grade / GPA</td>
+                            <td>3.4 </td>
+
+                        </tr>
+                        <tr>
+                            <td>Activities</td>
+                            <td>Sports etc<br>Fun stuff<br> Union member </td>
+
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="row right-row skills-row">
+                <div class="title">ADVANCED LEVEL
+                    <span class="glyphicon glyphicon-list-alt pull-right" aria-hidden="true"></span>
+                </div>
+                <div class="data">
+                    <h4>Year 2013</h4>
+
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Year</td>
+                            <td>A</td>
+                        </tr>
+
+                        <tr>
+                            <td>Maths</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Chemestry</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>General English</td>
+                            <td>B</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row right-row skills-row">
+                <div class="title">ORDINARY LEVEL
+                    <span class="glyphicon glyphicon-book pull-right" aria-hidden="true"></span>
+                </div>
+                <div class="data">
+                    <table class="table table-striped">
+                        <tr>
+                            <td>Maths</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Chemestry</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>General English</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Maths</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Chemestry</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>General English</td>
+                            <td>B</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="row right-row skills-row">
+                <div class="title">EXTRA CURRICULAR
+                    <span class="glyphicon glyphicon-flag pull-right" aria-hidden="true"></span>
+                </div>
+                <div class="data">
+                    <table class="table table-striped">
+
+                        <tr>
+                            <td>persmque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architec
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>em aperiam, eaque ipsa</td>
+                        </tr>
+                        <tr>
+                            <td>nis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</td>
+                        </tr>
+                        <tr>
+                            <td>iste natus error sit voluptat</td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+
+
+
+
+    <script src="./js/app.resume.js"></script>
+</div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <!--footer STARTS here-->
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+        // Grab DOM from warning.html's document.
+        var el = content.querySelector('footer');
+        document.body.appendChild(el.cloneNode(true));
+    </script>
+    <!--footer ENDS here-->
+</body>
+
+<script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
+<script src="./tools/rateyo/jquery.rateyo.min.js"></script>
+<script src="js/app.base.js"></script>
+
+
+
+</html>

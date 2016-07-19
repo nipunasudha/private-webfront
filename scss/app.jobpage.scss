@@ -41,11 +41,12 @@ $propic-size:200px;
             box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.16);
         }
     }
-    .resume-colomn {}
+   
     .resume-left {
         padding: 0px;
         background: $footer-color;
         .insights-row {
+            font-weight: 300;
             * {
                 font-size: 18px;
             }
@@ -55,16 +56,8 @@ $propic-size:200px;
                 .five-star {
                     padding-bottom: 20px;
                 }
-            }
-            .star-row {
-                padding: 0;
-                padding-top: 15px;
-                width: 50%;
-                img {
-                    width: 100%;
-                }
-                .star {
-                    padding: 0;
+                #rateYo {
+                    padding-top: 10px;
                 }
             }
         }
@@ -211,11 +204,15 @@ $propic-size:200px;
 }
 
 .resume-toolbar {
-    padding: 15px;
-    height: 70px;
+    @media screen and (max-width: $break-sm) {
+        margin: 0;
+    }
+     padding: 15px;
+    padding-bottom: 5px;
     background: lighten($color: $brand-primary, $amount: 35%);
     .btn {
-        margin-left: 10px;
+         margin-left: 10px;
+        margin-bottom: 10px;
         .glyphicon {
             margin-right: 10px;
         }

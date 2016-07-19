@@ -7,6 +7,7 @@
     <title>Home Base</title>
     <link rel="stylesheet" type="text/css" href="./tools/custom-Bootstrap/css/bootstrap_custom.css">
     <link rel="stylesheet" type="text/css" href="css/app.base.css">
+    <link rel="stylesheet" type="text/css" href="./tools/rateyo/jquery.rateyo.min.css">
 
     <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
 
@@ -162,9 +163,22 @@
 
 
             <!--==================== START ================-->
+            <!--loading RATE-YO plugin-->
+            <script>
+                $(function() {
+                    $('#rateYo').rateYo({
+                        rating: 3.6,
+                        normalFill: "rgba(0,0,0,0.4)",
+                        ratedFill: "#FFEB3B",
+                        halfStar: true,
+                        onSet: function(rating, rateYoInstance) {
+                            $('#my-rating').html("Your Rating : " + rating)
 
-
-
+                        }
+                    })
+                })
+            </script>
+            <!--loading RATE-YO plugin-->
 
 
             <div class="content row">
@@ -173,7 +187,7 @@
 
                     <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-download"></span>Download</button>
                     <button class="btn btn-primary pull-right"><span class="glyphicon glyphicon-print"></span>Print</button>
-                    <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-list-alt"></span>View Company Profile</button>
+                    <button class="btn btn-success pull-right"><span class="glyphicon glyphicon-pencil"></span>Edit</button>
                     <button class="btn btn-success btn-pin pull-right">
                         <span class="glyphicon glyphicon-bookmark"></span>
                     <span class="pin-text" >Subscribe</span>
@@ -204,107 +218,58 @@
 
 
                         <div class="row right-row skills-row">
-                            <div class="title">JOB DETAILS
-                                <span class="switch-md-d glyphicon glyphicon-briefcase pull-right" aria-hidden="true"></span>
-                            </div>
-                            <div class="data">
-                                <table class="table table-striped">
-                                    <tr>
-                                        <td>Job Location</td>
-                                        <td>Miriswatte, Matara, Sri Lanka</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Job Category</td>
-                                        <td>Sales Representative</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>Job Type</td>
-                                        <td>Full time</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>Salary Range</td>
-                                        <td>Rs.30,000 upwards</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>Vacancies</td>
-                                        <td>4</td>
-
-                                    </tr>
-
-                                </table>
-
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row right-row requirements-row switch-md-m">
-                            <div class="title">REQUIREMENTS
-                                <span class="switch-md-d glyphicon glyphicon-briefcase pull-right" aria-hidden="true"></span>
-                            </div>
-                            <div class="data">
-
-                                <table class="table table-striped">
-                                    <tr>
-                                        <td>Educational Qualifications</td>
-                                        <td>Miriswatte, Matara, Sri Lanka. Miriswatte, Matara, Sri Lanka.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Skills Required</td>
-                                        <td>
-
-                                            <div class="tag-list">
-                                                <ul class="list-inline">
-                                                    <li class="rtags">Adobe Photoshop</li>
-                                                    <li class="rtags">Artistic Drawing</li>
-                                                    <li class="rtags">Running</li>
-                                                    <li class="rtags">Web Development</li>
-                                                    <li class="rtags">Artistic Drawing</li>
-
-                                                </ul>
-
-                                            </div>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>Languages Required</td>
-                                        <td>
-                                            <div class="tag-list">
-                                                <ul class="list-inline">
-                                                    <li class="rtags">English</li>
-                                                    <li class="rtags">Sinhala</li>
-                                                    <li class="rtags">Korean</li>
-
-                                                </ul>
-
-                                            </div>
-                                        </td>
-
-                                    </tr>
-
-
-                                </table>
-
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row right-row  contact-row">
                             <div class="title">DESCRIPTION
                                 <span class="switch-md-d glyphicon glyphicon-list pull-right" aria-hidden="true"></span>
                             </div>
                             <div class="data">
-                                <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
-                                    consequences, or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man
-                                    who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
-                                    it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical
-                                    exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that <br><br> Produces noivial
-                                    example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences,
-                                    or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to
-                                    enjoy a pleasure that has no
+                                <h4>About Us</h4>
+                                <p>But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces noivial example, which of us ever undertakes laborious physical exercise,
+                                    except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces</p>
+                                <h4>Our Vision</h4>
+                                <p>But who has any righer undertakes laborious physical exercise, except to obtain some advantage from it? But who has any rigwho chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                                    produces
+                                </p>
+                                <h4>Our Mission</h4>
+                                <p>But who has any right to find om it? But who hachooses ts no annoying consequences, or one who avoids a pain that produces</p>
+
+
                             </div>
                         </div>
+                        <hr>
+                        <div class="row right-row requirements-row">
+                            <div class="title">CURRENT OPPORTUNITIES
+                                <span class="switch-md-d glyphicon glyphicon-briefcase pull-right" aria-hidden="true"></span>
+                            </div>
+                            <div class="data">
+
+                                <table class="table table-striped table-hover">
+                                    <tr>
+                                        <td>Partnerships Research and Data Analyst</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Computer Information Technology Officer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>	Senior Facilities Manager - Multiple duty stations in East Africa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>	Director, Asian and Pacific Centre for the Development of Disaster Information Management - Economic, Social and Development, Economic Affairs (and Sustainable Development)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>	Executive Assistant</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Partnerships Research and Data Analyst</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Assistant to the Director and team</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+
                         <hr>
                         <div class="row right-row languages-row">
                             <div class="title">ADDITIONAL INFO
@@ -348,85 +313,80 @@
 
                     <div class="col-md-5 col-md-pull-7 resume-colomn resume-left">
                         <div class="row left-row insights-row">
+                            <div class="company-logo">
+                                <img src="./assets/company.img/fakecompany.png" alt="">
+                            </div>
                             <table>
                                 <tr>
                                     <td class="five-star">
-                                        Company Rating : <span>4.7</span>
+                                        Company Rating : 4.7 (142)<br>
+                                        <span id="my-rating">Click to Rate</span>
+                                        <div id="rateYo"></div>
 
-                                        <div class="star-row">
-
-                                            <div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-                                                <div class="star col-xs-2"><img src="http://icons.iconarchive.com/icons/psdblast/flat-christmas/512/star-icon.png" alt=""></div>
-
-                                            </div>
-
-                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>10,147 People viewed this job</td>
+                                    <td>10,147 Subscribers</td>
                                 </tr>
                                 <tr>
-                                    <td>170 People pinned this</td>
+                                    <td>6 Current Opportunities</td>
                                 </tr>
                             </table>
                         </div>
                         <div class="row left-row  contact-row">
-                            <div class="title">COMPANY DETAILS</div>
+                            <div class="title">CONTACT</div>
                             <div class="data">
                                 <div class="container-fluid company-name">
                                     <h3>Deen Brothers LTD</h3>
                                 </div>
-                                <table>
+                                <table class="">
                                     <tr>
                                         <td><img src="./assets/resume.img/icons/address-resume.png" alt=""></td>
-                                        <td>Kalidasa rd, Matara, Sri Lanka</td>
+                                        <td>Sisiragiri, Hettiyawala Puhulwella, thawa kohehari</td>
                                     </tr>
+
                                     <tr>
                                         <td><img src="./assets/resume.img/icons/phone-resume.png" alt=""></td>
                                         <td>+9471 435 5447 / +9441 2285 285</td>
                                     </tr>
-
-
                                     <tr>
                                         <td><img src="./assets/resume.img/icons/email-resume.png" alt=""></td>
-                                        <td>info@deenltd.com</td>
+                                        <td>nipuna.sudha@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./assets/resume.img/icons/web-resume.png" alt=""></td>
+                                        <td><a href="//www.deenbrothers.com">www.deenbrothers.com</a> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><img src="./assets/resume.img/icons/linkedin-resume.png" alt=""></td>
+                                        <td>www.linkedin.com/in/</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./assets/resume.img/icons/facebook-resume.png" alt=""></td>
+                                        <td>www.facebook.com/nipunapro</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./assets/resume.img/icons/twitter-resume.png" alt=""></td>
+                                        <td style="word-wrap: break-word;">www.twitter.com/profiles/nipunapro</td>
                                     </tr>
 
                                 </table>
                             </div>
                         </div>
                         <div class="row left-row languages-row switch-md-d">
-                            <div class="title">LANGUAGES REQUIRED</div>
+                            <div class="title">INDUSTRY</div>
                             <div class="data">
                                 <ul>
-                                    <li class="btn btn-primary">English</li>
-                                    <li class="btn btn-primary">Sinhala</li>
-                                    <li class="btn btn-primary">Korean</li>
-
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="row left-row skills-row  switch-md-d">
-                            <div class="title">SKILLS REQUIRED</div>
-                            <div class="data">
-                                <ul>
-
-                                    <li class="btn btn-primary">Adobe Photoshop</li>
                                     <li class="btn btn-primary">Software Engineering</li>
-                                    <li class="btn btn-primary">Web Development</li>
-                                    <li class="btn btn-primary">Artistic Drawing</li>
-                                    <li class="btn btn-primary">Running</li>
+                                    <li class="btn btn-primary">App Developing</li>
+                                    <li class="btn btn-primary">Designing</li>
+
                                 </ul>
 
                             </div>
-
                         </div>
+
 
 
 
@@ -474,6 +434,7 @@
 </body>
 
 <script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
+<script src="./tools/rateyo/jquery.rateyo.min.js"></script>
 <script src="js/app.base.js"></script>
 
 
