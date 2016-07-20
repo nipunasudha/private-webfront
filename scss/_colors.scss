@@ -1,0 +1,26 @@
+//========= VARIABLES =======================
+// $brand-primary: #00bc82;
+$brand-primary: #3498DB;
+$brand-success: #213341;
+$brand-info:#27AE60;
+$footer-color:#28324E;
+$pin-color:#bd081c;
+$job-color:#2980b9;
+//text styles
+$fade-black:#555;
+
+//==== profile pages ======
+$tab-color-1:darken($color:$footer-color,$amount:8%);
+
+//=========================
+
+
+$gray-background:#eceff1;
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+
+.fade-b{
+    color: $fade-black !important;
+}

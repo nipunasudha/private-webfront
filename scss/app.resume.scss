@@ -1,79 +1,71 @@
 //========= VARIABLES =======================
-// $brand-primary: #00bc82;
-$brand-primary: #8BC34A;
-$brand-success: #213341;
-$footer-color:#28324E;
-$break-xs: 480px;
-$break-sm: 768px;
-$break-md: 992px;
-$break-lg: 1200px;
+@import 'colors';
+
 // =========== GENERAL =======================
 $propic-size:200px;
 .content {
-  
     .resume {
-      
         @media screen and (min-width: $break-sm+ 1px) {
             -webkit-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.16);
             -moz-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.16);
         }
     }
-    .resume-colomn {}
-    .resume-left {
-        *{
-            color: white;
-        }
-        padding: 0px;
-        background: $footer-color;
-        .pic-frame {
+     .pic-frame {
+            //background:url('./../assets/resume.img/dummy/propic_resume.jpg');
             border-radius: 100%;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            
             height: $propic-size;
             width: $propic-size;
             margin: 40px auto;
+            
+            &.m{
+               
+                margin-bottom: 0px;
+            }
         }
+    .resume-left {
+        padding: 0px;
+        background: $footer-color;
+        * {
+            color: white;
+        }
+        
+       
         .left-row {
             margin: 0px;
             &:not(.picture-row) {
-               
                 //height: 150px;
             }
             .title {
-                
                 font-weight: 500;
                 line-height: 40px;
                 font-size: 24px;
                 height: 40px;
                 width: 100%;
                 padding-left: 60px;
-               
-                text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.85);
+                //text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.85);
             }
-            .data{
+            .data {
                 padding-left: 60px;
-                 padding-right: 60px;
-                
-                margin:40px 0px; 
-                font-weight:300;
+                padding-right: 60px;
+                margin: 40px 0px;
+                font-weight: 300;
                 font-size: 18px;
-                ul{
+                ul {
                     margin-left: 10px;
                     padding-left: 0;
                 }
-                 li{
-                     margin: 10px 0px;
+                li {
+                    margin: 10px 0px;
                     list-style: none;
                 }
                 //for data tables
-                table{
-                    tr{
-                        
-                        td{
+                table {
+                    tr {
+                        td {
                             padding: 10px;
-                            img{
+                            img {
                                 height: 30px;
                             }
                         }
@@ -83,28 +75,46 @@ $propic-size:200px;
         }
         .contact-row {
             .title {
-                background: #fe7974;
+                background:  $tab-color-1;
+            }
+            table {
+                word-wrap: break-word!important;
+                table-layout: fixed!important;
+                *{
+                    border: none;
+                }
+                
+                .contact-table-img-td {
+                    width: 50px;
+                }
+                
             }
         }
         .languages-row {
             .title {
-                background: #7fa4b7;
+                background:  $tab-color-1;
             }
-            .data{
-                li{
+            .data {
+               li {
                     margin: 5px 4px;
-                    
+                    background: lighten($color: darkblue, $amount: 65%);
+                    border: none;
+                    border-radius: 25px;
+                    color: $brand-success;
                 }
             }
         }
         .skills-row {
             .title {
-                background: #adc549;
+                background:  $tab-color-1;
             }
-            .data{
-                li{
-                    margin: 5px 3px;
-                    
+            .data {
+                li {
+                    margin: 5px 2px;
+                    background: lighten($color: darkgreen, $amount: 70%);
+                    border: none;
+                    border-radius: 25px;
+                    color: $brand-success;
                 }
             }
         }
@@ -116,61 +126,60 @@ $propic-size:200px;
         }
         background: white;
         .right-row {
-            .glyphicon{
+            .glyphicon {
                 margin-right: 30px;
             }
             margin: 0px;
             &:not(.picture-row) {
-               // height: 150px;
+                // height: 150px;
             }
             .title {
-                margin-bottom: 30px; 
+                margin-bottom: 30px;
                 font-weight: 500;
                 line-height: 40px;
                 font-size: 27px;
-                height: 40px;
+                
                 width: 100%;
                 //padding-left: 60px;
-               // text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.85);
+                // text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.85);
             }
-            .data{
-                ul{
+            .data {
+                ul {
                     margin-left: 10px;
                     padding-left: 0;
                 }
-                li{
+                li {
                     font-size: 20px;
-                     margin: 10px 0px;
-                    font-weight:400;
+                    margin: 10px 0px;
+                    font-weight: 400;
                     list-style: none;
                 }
-                table{
-                  /*  margin:15px 0px; 
+                table {
+                    /*  margin:15px 0px; 
                     td{
                         padding: 5px 10px;
                     }*/
                 }
-                h4{
-                     font-weight:600;
+                h4 {
+                    font-weight: 600;
                 }
             }
         }
     }
-    
 }
 
-.resume-toolbar{
-     @media screen and (max-width: $break-sm) {
+.resume-toolbar {
+    @media screen and (max-width: $break-sm) {
         margin: 0;
     }
-     padding: 15px;
+    padding: 15px;
     padding-bottom: 5px;
     background: lighten($color: $brand-primary, $amount: 35%);
-.btn{
-     margin-left: 10px;
+    .btn {
+        margin-left: 10px;
         margin-bottom: 10px;
-    .glyphicon{
-        margin-right: 10px;
+        .glyphicon {
+            margin-right: 10px;
+        }
     }
-}
 }

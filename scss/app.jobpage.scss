@@ -1,13 +1,6 @@
 //========= VARIABLES =======================
-// $brand-primary: #00bc82;
-$brand-primary: #8BC34A;
-$brand-success: #213341;
-$footer-color:#28324E;
-$pin-color:#bd081c;
-$break-xs: 480px;
-$break-sm: 768px;
-$break-md: 992px;
-$break-lg: 1200px;
+@import 'colors';
+
 // =========== GENERAL =======================
 $propic-size:200px;
 .btn-pinned,.btn-pinned:focus {
@@ -76,7 +69,7 @@ $propic-size:200px;
                 height: 40px;
                 width: 100%;
                 padding-left: 60px;
-                text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.85);
+                //text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.85);
             }
             .data {
                 padding-left: 60px;
@@ -110,12 +103,24 @@ $propic-size:200px;
         }
         .contact-row {
             .title {
-                background: #fe7974;
+                background:  $tab-color-1;
+            }
+             table {
+                word-wrap: break-word!important;
+                table-layout: fixed!important;
+                *{
+                    border: none;
+                }
+                
+                .contact-table-img-td {
+                    width: 50px;
+                }
+                
             }
         }
         .languages-row {
             .title {
-                background: #7fa4b7;
+                background:  $tab-color-1;
             }
             .data {
                 li {
@@ -129,7 +134,7 @@ $propic-size:200px;
         }
         .skills-row {
             .title {
-                background: #adc549;
+                background:  $tab-color-1;
             }
             .data {
                 li {

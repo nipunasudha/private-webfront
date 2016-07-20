@@ -1,6 +1,9 @@
+.fade-b {
+  color: #555 !important; }
+
 body {
   padding-top: 60px;
-  background: #8BC34A;
+  background: #3498DB;
   font-family: Roboto; }
 
 .form-group,
@@ -151,11 +154,11 @@ body {
   width: 100%;
   background: white; }
   .row-main .div-advanced-search {
-    background: #8BC34A;
+    background: #3498DB;
     opacity: 0.2;
     height: 400px; }
   .row-main .div-item-container {
-    background: #8BC34A;
+    background: #3498DB;
     opacity: 0.4;
     height: 400px; }
 

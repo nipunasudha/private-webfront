@@ -1,11 +1,6 @@
-// $brand-primary: #00bc82;
-$brand-primary: #8BC34A;
-$brand-success: #213341;
-$footer-color:#28324E;
-$break-xs: 480px;
-$break-sm: 768px;
-$break-md: 992px;
-$break-lg: 1200px;
+//========= VARIABLES =======================
+@import 'colors';
+
 //GENERAL================================================================
 body {
     padding-top: 60px;
@@ -64,7 +59,7 @@ body {
         border-radius: 0px!important;
         padding: 5px;
         background: none;
-        border: 1px solid darkslategrey
+        border: 1px solid darkslategrey;
     }
 }
 
