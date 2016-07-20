@@ -37,7 +37,8 @@ $propic-size:200px;
    
     .resume-left {
         padding: 0px;
-        background: $footer-color;
+        background-image:$noise;
+        background-color: $footer-color;
         .insights-row {
             font-weight: 300;
             * {
@@ -212,9 +213,10 @@ $propic-size:200px;
     @media screen and (max-width: $break-sm) {
         margin: 0;
     }
-     padding: 15px;
+    padding: 15px;
     padding-bottom: 5px;
-    background: lighten($color: $brand-primary, $amount: 35%);
+    background-image:$noise-low;
+    background-color: lighten($color: #BDC3f7, $amount: 10%);
     .btn {
          margin-left: 10px;
         margin-bottom: 10px;

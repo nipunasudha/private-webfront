@@ -1,5 +1,4 @@
 @import 'colors';
-
 //FORM STYLING
 .form-group,
 .checkbox,
@@ -41,11 +40,11 @@
 
 .content {
     .left-div {
-
         padding: 30px;
-        background: $footer-color;
+        background-image: $noise;
+        background-color: $footer-color;
         font-weight: 300!important;
-        *{
+        * {
             border-radius: 0px;
         }
         label {
@@ -54,24 +53,22 @@
         @media screen and (max-width: $break-sm) {
             margin: 20px;
         }
-        .btn-filter{
-            margin:0 0 0 auto;
+        .btn-filter {
+            margin: 0 0 0 auto;
             float: right;
         }
-        .top-btn-filter-container{
+        .top-btn-filter-container {
             margin: 0 0px;
         }
     }
     .right-div {
-
         margin: 0;
         padding: 50px;
         background: #ECEFF1;
-        .results-label{
+        .results-label {
             color: $brand-success;
         }
         .job-object {
-            
             border-bottom: 8px solid $job-color;
             font-weight: 400;
             //shadow
@@ -84,7 +81,7 @@
             margin: 20px 0;
             // background: white;
             border-radius: 20px 0 20px 0;
-            .title-div{
+            .title-div {
                 padding-left: 0;
             }
             .body-bar {
@@ -93,45 +90,70 @@
                 padding: 25px 50px 5px 50px;
                 border-radius: 0 0 20px 0;
                 .t-2 {
-                    padding-bottom: 15px;
+                    padding-bottom: 5px;
+                    font-size: 16px;
+                }
+                @media screen and (max-width: $break-sm) {
+                    padding: 15px 25px 15px 25px;
+                    padding-bottom: 0;
+                 /*  table {
+                        margin-bottom: 0;
+                    }
+                    .t-1 {
+                        padding-bottom: 0px;
+                    }*/
                 }
             }
             .header-bar {
+                position: relative;
                 color: white;
-                background: $job-color;
+                background-image:$noise;
+                background-color: $job-color;
                 width: 100%;
-                padding: 25px 20px 10px 50px;
+                padding: 25px 50px 10px 50px;
                 border-radius: 20px 0 0 0;
+                table {
+                    word-wrap: break-word!important;
+                    table-layout: fixed!important;
+                    &,
+                    * {
+                        border: none;
+                    }
+                }
                 .t-1 {
                     padding-bottom: 8px;
                 }
+                @media screen and (max-width: $break-sm) {
+                    padding: 10px 20px 10px 20px;
+                    table {
+                        margin-bottom: 0;
+                    }
+                    .t-1 {
+                        padding-bottom: 0px;
+                    }
+                }
                 table {
                     width: 100%;
+                    margin-bottom: 0;
                 }
-                .button-set {
-                    span {
-                        display: inline-block;
-                    }
+                .t-row-company {}
+                .btn-watch {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
                     img {
                         border-radius: 7px;
                         padding: 4px;
                         height: 30px;
                         margin: 3px;
                         background-color: rgba($color: white, $alpha: 0.1);
-                    }
-                    .btn-apply {
-                        img {
-                            &.active {
-                                background: #66BB6A;
-                            }
+                        &.active {
+                            background-color: #F1C40F;
                         }
                     }
-                    .btn-watch {
-                        img {
-                            &.active {
-                                background-color: $pin-color;;
-                            }
-                        }
+                    @media screen and (max-width: $break-sm) {
+                        top: 5px;
+                        right: 5px;
                     }
                 }
             }
@@ -151,13 +173,7 @@
                     border-radius: 40px;
                 }
                 .meta1 {
-                    background: #5C6BC0;
-                }
-                .meta2 {
-                    background: #66BB6A;
-                }
-                .meta3 {
-                    background: $pin-color;
+                    background: lighten($color: $job-color, $amount: 0);
                 }
                 span {
                     margin-right: 6px;

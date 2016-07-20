@@ -1,10 +1,10 @@
 //========= VARIABLES =======================
 @import 'colors';
-
 //GENERAL================================================================
 body {
     padding-top: 60px;
-    background: $brand-primary;
+    background-image: $noise;
+    background-color: $brand-primary;
     font-family: Roboto;
     //font-weight: 500;
 }
@@ -96,7 +96,7 @@ body {
     }
     .navbar-brand {
         padding: 12px 30px;
-     }
+    }
     .btn {
         font-weight: bold;
     }
@@ -215,7 +215,8 @@ body {
     padding: 40px 0px;
     margin: 0px;
     width: 100%;
-    background: white;
+    background-image: $noise-low;
+    background-color: white;
     .div-advanced-search {
         background: $brand-primary;
         opacity: 0.2;
@@ -230,7 +231,8 @@ body {
 
 //=============== FOOTER ===========================
 .footer {
-    background: $footer-color;
+    background-image: $noise;
+    background-color: $footer-color;
     padding: 40px;
     padding-bottom: 0;
     .logo-row {
@@ -274,10 +276,10 @@ body {
 
 //PERFORMANCE IMPROVEMENT
 .collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height .35s ease;
-       -o-transition: height .35s ease;
-          transition: height .35s ease;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .35s ease;
+    -o-transition: height .35s ease;
+    transition: height .35s ease;
 }
