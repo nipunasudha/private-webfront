@@ -1,0 +1,38 @@
+@import 'colors';
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'News Cycle';
+}
+
+.holder {
+    margin: 40px;
+    &>div {
+        padding: 40px;
+    }
+    .left-col {
+        background-image: $noise-low;
+        background-color: lightgray;
+        height: 500px;
+        .row-fbgoogle {
+            img {
+                height: 120px;
+            }
+        }
+    }
+    .right-col {
+        color: white;
+        background-image: $noise;
+        background-color: $brand-primary;
+        height: 500px;
+        .image {
+            img {
+                width: 70%;
+            }
+        }
+        .promise {
+            padding: 30px 10px;
+        }
+    }
+}
