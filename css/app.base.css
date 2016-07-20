@@ -3,7 +3,8 @@
 
 body {
   padding-top: 60px;
-  background: #3498DB;
+  background-image: url(" http://api.thumbr.it/whitenoise-361x370.png?background=4ea6ca00&noise=626262&density=92&opacity=14");
+  background-color: #3498DB;
   font-family: Roboto; }
 
 .form-group,
@@ -152,7 +153,8 @@ body {
   padding: 40px 0px;
   margin: 0px;
   width: 100%;
-  background: white; }
+  background-image: url(" http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=626262&density=100&opacity=6");
+  background-color: white; }
   .row-main .div-advanced-search {
     background: #3498DB;
     opacity: 0.2;
@@ -163,7 +165,8 @@ body {
     height: 400px; }
 
 .footer {
-  background: #28324E;
+  background-image: url(" http://api.thumbr.it/whitenoise-361x370.png?background=4ea6ca00&noise=626262&density=92&opacity=14");
+  background-color: #28324E;
   padding: 40px;
   padding-bottom: 0; }
   .footer .logo-row .img {
