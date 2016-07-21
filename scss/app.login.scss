@@ -22,14 +22,20 @@
                 border: 1px solid #bbb;
             }
         }
-        .row-fbgoogle {
-            padding-top: 20px;
+        .row-social-login {
+            .social {
+                padding: 0;
+            }
+            .signin-m {
+                padding: 0 20px;
+                line-height: 40px;
+            }
             img {
-                height: 120px;
+                height: 40px;
             }
-            .fa {
-                //margin: 5px;
-            }
+        }
+        .row-dont {
+            padding-top: 10px;
         }
     }
     .right-col {
@@ -37,6 +43,11 @@
         background-image: $noise;
         background-color: $brand-primary;
         //height: 500px;
+        .help-text-m {
+            h3 {
+                margin: 0 5px 30px 5px;
+            }
+        }
         .image {
             display: none;
             img {
@@ -73,4 +84,11 @@
     div {
         display: inline-block;
     }
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
 }

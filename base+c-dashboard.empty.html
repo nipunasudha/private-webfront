@@ -7,11 +7,12 @@
     <title>Home Base</title>
     <link rel="stylesheet" type="text/css" href="./tools/custom-Bootstrap/css/bootstrap_custom.css">
     <link rel="stylesheet" type="text/css" href="css/app.base.css">
-    <link rel="stylesheet" type="text/css" href="./tools/rateyo/jquery.rateyo.min.css">
 
     <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
 
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,100italic,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+
 
     <!--EXTERNAL PAGE IMPORTS-->
     <link rel="import" href="./footer.html">
@@ -19,9 +20,6 @@
 
     <!--EXTERNAL PAGE IMPORTS-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-
-    <script src="./tools/underscore/underscore-min.js"></script>
-
     <script src="./js/mobile-hide-show.js"></script>
 
 </head>
@@ -167,108 +165,90 @@
             <!--==================== START ================-->
 
 
-            <div class="content row">
-                <link rel="stylesheet" type="text/css" href="./css/app.login.css">
-                <link rel="stylesheet" type="text/css" href="./tools/social-login-buttons/bootstrap-social.css">
-
-                <!--START START START START START START START START START START START START -->
-                <!--START START START START START START START START START START START START -->
-                <!--START START START START START START START START START START START START -->
-                <!--START START START START START START START START START START START START -->
-                <!--START START START START START START START START START START START START -->
-                <!--START START START START START START START START START START START START -->
-                <!--START START START START START START START START START START START START -->
-
-                <div class="holder row">
-                    <div class="col-md-4 left-col eq-one">
-                        <div class="row row-title">
-                            <h3>Sign In</h3>
-                        </div>
-                        <div class="row row-form">
-                            <form role="form">
-                                <div class="form-group">
-
-                                    <input type="email" class="form-control" id="email" placeholder="Jobmart Username">
-                                </div>
-                                <div class="form-group">
-
-                                    <input type="password" class="form-control" id="pwd" placeholder="Password">
-                                </div>
-                                <div class="checkbox">
-                                    <label><input type="checkbox"> Remember me</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary pull-right switch-md-d">Sign In</button>
-                            </form>
-                        </div>
-                        <div class="row row-title switch-md-d">
-                            <h3>Social Sign In</h3>
-                        </div>
-                        <div class="rowk row-social-login">
-                            <!--------------------->
-
-                            <div>
-                                <a class="btn btn-facebook btn-lg social">
-                                    <img src="./assets/login.img/social-login/facebook.png" alt=""></span>
-                                </a>
-                            </div>
-
-                            <!--------------------->
-                            <div>
-                                <a class="btn  btn-google btn-lg social">
-                                    <img src="./assets/login.img/social-login/google.png" alt=""> </a>
-                            </div>
-                            <!--------------------->
-                            <div>
-                                <a class="btn btn-linkedin btn-lg social">
-                                    <img src="./assets/login.img/social-login/linkedin.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="pull-right switch-md-m">
-                                <a class="btn btn-success btn-md signin-m ">
-                                    Sign In
-                                </a>
-                            </div>
 
 
 
-                        </div>
-                        <a href="#top">  <div class="row row-dont switch-md-m" ">
-                            <h4>Don't have a account?</h4>
-                        </div></a>
+            <!--Content-->
+            <div class="row content">
+
+
+
+
+
+                <link rel="stylesheet" type="text/css" href="./css/app.c.dashboard.css">
+
+                <div class="dashboard">
+                    <div class="navigation col-md-3 col-xs-2">
+
+                        <table class="nav-table">
+                            <tr class="active nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/summary.png"></td>
+                                <td class="nav-title">
+                                    <h4>Overview</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/company.png"></td>
+                                <td class="nav-title">
+                                    <h4>Company Profile</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/jobs.png"></td>
+                                <td class="nav-title">
+                                    <h4>Jobs</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/resume.png"></td>
+                                <td class="nav-title">
+                                    <h4>Applications</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/interviews.png"></td>
+                                <td class="nav-title">
+                                    <h4>Interviews</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/tests.png"></td>
+                                <td class="nav-title">
+                                    <h4>Aptitude Tests</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/mail.png"></td>
+                                <td class="nav-title">
+                                    <h4>Mailbox</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/bookmark.png"></td>
+                                <td class="nav-title">
+                                    <h4>Bookmarks</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/settings.png"></td>
+                                <td class="nav-title">
+                                    <h4>Settings</h4></td>
+                            </tr>
+
+                        </table>
+
+
+
                     </div>
+                    <div class="dashboard-body col-md-9 col-xs-10">
+
+
+<!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
+<!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
 
 
 
-                    <a class="anchor" id="top"></a>
-                    <div class="col-md-8 right-col eq-two">
-                        <div class="row image switch-md-d">
 
 
 
-                            <img src="./assets/login.img/Loginbanner.png" align="middle" alt="">
 
 
-                        </div>
 
+<!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
+<!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
 
-<div class="help-text-m switch-md-m">
-    <h3>Join the Crowd, Boost Yourself!</h3>
-</div>
-
-                        <div 
-                        class="create-btn-div">
-                            <a href="" class="btn btn-success btn-lg">Register Now!</a>
-                            <img class="arrow switch-md-d" src="./assets/login.img/register now.png" alt="">
-
-
-                        </div>
-                        <div class="container-fluid promise switch-md-d">
-                            <h3>It's really easy, and we promise to guide you along the way!</h3>
-                        </div>
-                        <div class="container-fluid promise switch-md-m">
-                            <h4>It's really easy, and we promise to guide you along the way!</h4>
-                        </div>
 
 
                     </div>
@@ -278,18 +258,12 @@
 
 
 
-                <!--END END END END END END END END END END END END END END END END END END END -->
-                <!--END END END END END END END END END END END END END END END END END END END -->
-                <!--END END END END END END END END END END END END END END END END END END END -->
-                <!--END END END END END END END END END END END END END END END END END END END -->
-                <!--END END END END END END END END END END END END END END END END END END END -->
-                <!--END END END END END END END END END END END END END END END END END END END -->
-                <!--END END END END END END END END END END END END END END END END END END END -->
 
 
 
 
-                <script src="./js/app.login.js"></script>
+                <script src="./js/app.c.dashboard.js"></script>
+
             </div>
 
 
@@ -298,11 +272,7 @@
 
 
 
-
-
-
-
-
+            <!--==================== END ================-->
 
         </div>
 
@@ -319,13 +289,9 @@
         document.body.appendChild(el.cloneNode(true));
     </script>
     <!--footer ENDS here-->
-
 </body>
 
 <script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
-<script src="./tools/rateyo/jquery.rateyo.min.js"></script>
-<script src="./tools/matchheight/jquery.matchHeight-min.js"></script>
-
 <script src="js/app.base.js"></script>
 
 

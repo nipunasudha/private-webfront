@@ -1,6 +1,9 @@
 .fade-b {
   color: #555 !important; }
 
+.switch-md-m, .switch-md-d, .switch-sm-m, .switch-sm-d {
+  display: none; }
+
 body {
   overflow-x: hidden;
   padding-top: 60px;
@@ -165,6 +168,9 @@ body {
   width: 100%;
   background-image: url(" http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=626262&density=100&opacity=6");
   background-color: white; }
+  @media screen and (max-width: 768px) {
+    .row-main {
+      padding-top: 0; } }
   .row-main .div-advanced-search {
     background: #3498DB;
     opacity: 0.2;

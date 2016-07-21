@@ -6,8 +6,9 @@ $(window).on('resize', function () {
 })
 
 function adj () {
-  //$('.arrow').css('left', '200px')
+ 
 }
 
-function arrow_fix () {
+function scroll_signup(){
+  
 }

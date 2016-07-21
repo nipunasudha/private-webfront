@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Home Base</title>
+    <link rel="stylesheet" type="text/css" href="./tools/custom-Bootstrap/css/bootstrap_custom.css">
+    <link rel="stylesheet" type="text/css" href="css/app.base.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,100italic,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+    <link rel="import" href="./footer.html">
+
+
+    <!--EXTERNAL PAGE IMPORTS-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/mobile-hide-show.js"></script>
+
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="./assets/img/J_logo_dark.png" />
+
+<body>
+    <div class="lang-div">
+
+        <div class="dropup lang-menu">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span> <img src="./assets/img/lang/lang-sinhala.jpg" alt=""></span>
+    <span class="caret"></span>
+  </button>
+            <ul class="dropdown-menu" aria-labelledby="lang-menu">
+                <li><a href="#"><span> <img src="./assets/img/lang/lang-sinhala.jpg" alt=""></span>English</a></li>
+                <li><a href="#"><span> <img src="./assets/img/lang/lang-english.jpg" alt=""></span>Sinhala</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="go-to-top"></div>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/J LOGO_with_name_LQ.png" height="36" alt="Logo">
+
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">DASHBOARD</a></li>
+                    <li><a href="#">RESUME</a></li>
+
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right notification-ul">
+                    <!--desktop version-->
+                    <li class="dropdown notification-lg">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="notification-icon" src="./assets/img/notification_icon_bell_dark.png"> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox <span class="badge pull-right">4</span></a></li>
+                            <li><a href="#">Profile Views<span class="badge pull-right">0</span></a></li>
+                            <li><a href="#">Flags<span class="badge pull-right">11</span></a></li>
+                        </ul>
+                    </li>
+                    <!--mobile version-->
+                    <li class="dropdown notification-sm">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTIFICATIONS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Inbox<span class="badge pull-right">4</span></a></li>
+                            <li><a href="#">Profile Views<span class="badge pull-right">0</span></a></li>
+                            <li><a href="#">Flags<span class="badge pull-right">11</span></a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+                <div class="navbar-form navbar-right">
+                    <button class="btn btn-primary">LOIGIN</button>
+                    <button class="btn btn-success">SIGNUP</button>
+
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="user-propic" src="./assets/img/dummy/user_profile_for_home.jpg">HELLO PRABOD <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">MailBox</a></li>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Report a Problem</a></li>
+
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container search-container">
+
+        <div class="row search-box-row">
+            <div class="search-bread">
+                <div class="col-sm-6 breadcrumb-div">
+
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li class="active">Data</li>
+                    </ol>
+                </div>
+                <div class="col-sm-6 search-min-div">
+
+                    <div class="input-group input-group-sm search-box search-box-sm">
+
+                        <input type="text" class="form-control" placeholder="Search for Jobs!" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span> </span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="search-only">
+                <!--switch between lg & sm to resize-->
+                <div class="input-group input-group-lg search-box search-box-lg">
+
+                    <input type="text" class="form-control" placeholder="Search for Jobs!" aria-describedby="sizing-addon1">
+                    <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span> </span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="row-main">
+        <div class="container">
+
+
+            <!--==================== START ================-->
+
+
+
+
+
+            <!--Content-->
+            <div class="row content">
+
+
+
+
+
+                <link rel="stylesheet" type="text/css" href="./css/app.c.dashboard.css">
+
+                <div class="dashboard">
+                    <div class="navigation col-md-3 col-xs-2">
+
+                        <table class="nav-table">
+                            <tr class="active nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/summary.png"></td>
+                                <td class="nav-title">
+                                    <h4>Overview</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/company.png"></td>
+                                <td class="nav-title">
+                                    <h4>Company Profile</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/jobs.png"></td>
+                                <td class="nav-title">
+                                    <h4>Jobs</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/resume.png"></td>
+                                <td class="nav-title">
+                                    <h4>Applications</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/interviews.png"></td>
+                                <td class="nav-title">
+                                    <h4>Interviews</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/tests.png"></td>
+                                <td class="nav-title">
+                                    <h4>Aptitude Tests</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/mail.png"></td>
+                                <td class="nav-title">
+                                    <h4>Mailbox</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/bookmark.png"></td>
+                                <td class="nav-title">
+                                    <h4>Bookmarks</h4></td>
+                            </tr>
+                            <tr class="nav-row">
+                                <td class="nav-img"><img src="./assets/dashboard.img/icons/settings.png"></td>
+                                <td class="nav-title">
+                                    <h4>Settings</h4></td>
+                            </tr>
+
+                        </table>
+
+
+
+                    </div>
+                    <div class="dashboard-body col-md-9 col-xs-10">
+
+
+                        <!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
+                        <!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
+
+
+
+
+                        <!--shortlist interviews-->
+                        <div class=" dash-applications">
+                            <div class="row title">
+                                <h3>Job Applications</h3></div>
+                            <div class="row tool-bar">
+                                <a href="" class="btn btn-warning pull-right">Post a Job</a>
+
+                                <div class="dropdown pull-right">
+                                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Sort by
+    <span class="caret"></span>
+  </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Job Title</a></li>
+                                        <li><a href="#">Post Date</a></li>
+                                        <li><a href="#">Job Views</a></li>
+                                        <li><a href="#">Apply Count</a></li>
+
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-sort-by-alphabet"></span> Ascending</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span> Descending</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="table-div">
+
+                                <table class="">
+                                    <tr>
+                                        <th class="date">Date</th>
+                                        <th class="message">Job Title</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="date">10/06/15</td>
+                                        <td class="message">Deen Brothers (pvt) ltd. called you for a test! 
+                                            <span class="badge">42</span> 
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date">10/06/15</td>
+                                        <td class="message">Deen Brothers (pvt) ltd. called youhers (pvt) ltd. called youhers (pvt) ltd. called you for a test! 
+                                            <span class="badge">42</span> 
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date">10/06/15</td>
+                                        <td class="message">Deen Brothers (pvt) ltd. called youu for a test! 
+                                            <span class="badge">42</span> 
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date">10/06/15</td>
+                                        <td class="message">Deen Brotherhers (pvt) ltd. called youst!</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date">10/06/15</td>
+                                        <td class="message">Dehers (pvt) ltd. called you) ltd. called you for a test! 
+                                            <span class="badge">42</span> 
+                                            </td>
+                                    </tr>
+                                    <tr class="read">
+                                        <td class="date">10/06/15</td>
+                                        <td class="message">Deen Brothers hers (pvt) ltd. called youa test! 
+                                            <span class="badge">42</span> 
+                                            </td>
+                                    </tr>
+
+
+
+
+                                </table>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
+                        <!--CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT -->
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <script src="./js/app.c.dashboard.js"></script>
+
+            </div>
+
+
+
+
+
+
+
+            <!--==================== END ================-->
+
+        </div>
+
+
+    </div>
+
+
+    <!--footer STARTS here-->
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+        var content = link.import;
+        // Grab DOM from warning.html's document.
+        var el = content.querySelector('footer');
+        document.body.appendChild(el.cloneNode(true));
+    </script>
+    <!--footer ENDS here-->
+</body>
+
+<script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
+<script src="js/app.base.js"></script>
+
+
+
+</html>
