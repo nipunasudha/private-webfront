@@ -1,25 +1,13 @@
-
 $(function () {
-  adjustments()
-  
+  adj()
 })
 $(window).on('resize', function () {
-  adjustments()
+  adj()
 })
 
-function adjustments(){
-  // _.debounce(arrow_fix, 300);
+function adj () {
+  //$('.arrow').css('left', '200px')
 }
 
-
-
 function arrow_fix () {
-    
-  arrow = $('.arrow')
-  signup = $('.create-btn-div')
-
-  arrow.css({
-    'left': '40px',
-    'top': '100px'
-  })
 }
