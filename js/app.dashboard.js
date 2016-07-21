@@ -1,6 +1,5 @@
 $(function () {
   adjustments_dash()
- 
 })
 $(window).on('resize', function () {
   adjustments_dash()
@@ -8,8 +7,9 @@ $(window).on('resize', function () {
 
 function adjustments_dash () {
   if (window.innerWidth <= 992) {
-   $('.nav-title').hide();
+    $('.nav-title').hide()
   }else {
-  $('.nav-title').show();
+    $('.nav-title').show()
+    $('.nav-img').width($('.nav-img').height())
   }
 }

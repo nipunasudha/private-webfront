@@ -1,23 +1,31 @@
 @import 'colors';
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'News Cycle';
-}
-
-.holder {
-    margin: 40px;
+.holder:not(row-social-login) {
+    //margin: 40px;
     &>div {
-        padding: 40px;
+        padding: 50px;
     }
     .left-col {
+        color: black!important;
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
         background-image: $noise-low;
-        background-color: lightgray;
-        height: 500px;
+        background-color: lighten($color: lightgray, $amount: 10%);
+        // height: 500px;
+        .row-form {
+            padding-top: 20px;
+            input {
+                border: 1px solid #bbb;
+            }
+        }
         .row-fbgoogle {
+            padding-top: 20px;
             img {
                 height: 120px;
+            }
+            .fa {
+                //margin: 5px;
             }
         }
     }
@@ -25,7 +33,7 @@ h4 {
         color: white;
         background-image: $noise;
         background-color: $brand-primary;
-        height: 500px;
+        //height: 500px;
         .image {
             img {
                 width: 70%;
@@ -34,5 +42,23 @@ h4 {
         .promise {
             padding: 30px 10px;
         }
+        .create-btn-div {
+           
+            position: relative;
+            .arrow {
+               
+                height: 80px;
+                position: absolute;
+                top:0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.row-social-login {
+    padding-top: 20px;
+    div {
+        display: inline-block;
     }
 }

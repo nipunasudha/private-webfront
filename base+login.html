@@ -11,8 +11,7 @@
 
     <!--<link rel="stylesheet" type="text/css" href="css/app.base.css./tools/font-awesome-4.6.3/css/font-awesome.min.css">-->
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,100italic,300,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
 
     <!--EXTERNAL PAGE IMPORTS-->
     <link rel="import" href="./footer.html">
@@ -20,6 +19,9 @@
 
     <!--EXTERNAL PAGE IMPORTS-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="./tools/underscore/underscore-min.js"></script>
+
     <script src="./js/mobile-hide-show.js"></script>
 
 </head>
@@ -167,6 +169,7 @@
 
             <div class="content row">
                 <link rel="stylesheet" type="text/css" href="./css/app.login.css">
+                <link rel="stylesheet" type="text/css" href="./tools/social-login-buttons/bootstrap-social.css">
 
                 <!--START START START START START START START START START START START START -->
                 <!--START START START START START START START START START START START START -->
@@ -177,32 +180,61 @@
                 <!--START START START START START START START START START START START START -->
 
                 <div class="holder row">
-                    <div class="col-md-6 left-col">
+                    <div class="col-md-4 left-col">
                         <div class="row row-title">
                             <h3>Sign In</h3>
                         </div>
                         <div class="row row-form">
                             <form role="form">
                                 <div class="form-group">
-                                    <label for="email">Email address:</label>
-                                    <input type="email" class="form-control" id="email">
+
+                                    <input type="email" class="form-control" id="email" placeholder="Jobmart Username">
                                 </div>
                                 <div class="form-group">
-                                    <label for="pwd">Password:</label>
-                                    <input type="password" class="form-control" id="pwd">
+
+                                    <input type="password" class="form-control" id="pwd" placeholder="Password">
                                 </div>
                                 <div class="checkbox">
                                     <label><input type="checkbox"> Remember me</label>
                                 </div>
-                                <button type="submit" class="btn btn-default">Sign In</button>
+                                <button type="submit" class="btn btn-success pull-right">Sign In</button>
                             </form>
                         </div>
-                        <div class="row row-fbgoogle">
-                            <img src="./assets/login.img/loginwithfb.png" alt="">
+                        <div class="row row-title">
+                            <h3>Social Sign In</h3>
+                        </div>
+                        <div class="rowk row-social-login">
+                            <!--------------------->
+
+                            <div>
+                                <a class="btn btn-block btn-social-icon btn-facebook btn-lg">
+                                    <span class="fa fa-facebook"></span> </a>
+                            </div>
+
+                            <!--------------------->
+                            <div>
+                                <a class="btn btn-block btn-social-icon btn-google btn-lg">
+                                    <span class="fa fa-google"></span> </a>
+                            </div>
+                            <!--------------------->
+                            <div>
+                                <a class="btn btn-block btn-social-icon btn-linkedin btn-lg">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                            </div>
+                            <!--------------------->
+
+                            <div>
+                                <a class="btn btn-block btn-social-icon btn-github btn-lg">
+                                    <span class="fa fa-github"></span> </a>
+                            </div>
+                            <!--------------------->
+
+
                         </div>
 
                     </div>
-                    <div class="col-md-6 right-col">
+                    <div class="col-md-8 right-col">
                         <div class="row">
 
                             <div class="col-xs-4 title">
@@ -219,15 +251,17 @@
                         </div>
 
 
+                        <div class="create-btn-div">
+                            <a href="" class="btn btn-success">Create a Jobmart Accout.</a>
+                            <img class="arrow" src="./assets/login.img/arrow.png" alt="">
+
+
+                        </div>
 
 
 
-
-                        <a href="" class="btn btn-success">Create a Jobmart Accout.</a>
                     </div>
                 </div>
-
-
 
 
 
@@ -274,10 +308,12 @@
         document.body.appendChild(el.cloneNode(true));
     </script>
     <!--footer ENDS here-->
+
 </body>
 
 <script src="./tools/custom-Bootstrap/js/bootstrap.min.js"></script>
 <script src="./tools/rateyo/jquery.rateyo.min.js"></script>
+
 <script src="js/app.base.js"></script>
 
 
