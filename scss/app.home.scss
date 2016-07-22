@@ -3,29 +3,6 @@
 
 // =========== GENERAL =======================
 $propic-size:200px;
-.btn-pinned,.btn-pinned:focus {
-    outline: none;
-    background: $pin-color;
-    color: white;
-    border-color: white;
-    &:hover {
-        background: darken($color: $pin-color, $amount: 5%);
-    color: white;
-    
-    }
-}
-
-.btn-pin, .btn-pin:focus {
-    outline: none;
-    background: white;
-    color: $pin-color;
-    border-color: $pin-color;
-    &:hover {
-        background: lighten($color: $pin-color, $amount: 55%);
-        color: $pin-color;
-    }
-}
-
 .content {
     .resume {
         @media screen and (min-width: $break-sm+ 1px) {
@@ -34,30 +11,27 @@ $propic-size:200px;
             box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.16);
         }
     }
-   
-    .resume-left {
-        padding: 0px; 
-        background-image:$noise;
-        background-color: $footer-color;
-        .insights-row {
-            font-weight: 300;
-            * {
-                font-size: 18px;
-            }
-            padding: 60px 60px;
-            table {
-                width: 100%;
-                .five-star {
-                    padding-bottom: 20px;
-                }
-                #rateYo {
-                    padding-top: 10px;
-                }
+     .pic-frame {
+            //background:url('./../assets/resume.img/dummy/propic_resume.jpg');
+            border-radius: 100%;
+            
+            height: $propic-size;
+            width: $propic-size;
+            margin: 40px auto;
+            
+            &.m{
+               
+                margin-bottom: 0px;
             }
         }
+    .resume-left {
+        padding: 0px;
+        background: $footer-color;
         * {
             color: white;
         }
+        
+       
         .left-row {
             margin: 0px;
             &:not(.picture-row) {
@@ -78,9 +52,6 @@ $propic-size:200px;
                 margin: 40px 0px;
                 font-weight: 300;
                 font-size: 18px;
-                .company-name{
-                    padding:0;
-                }
                 ul {
                     margin-left: 10px;
                     padding-left: 0;
@@ -106,7 +77,7 @@ $propic-size:200px;
             .title {
                 background:  $tab-color-1;
             }
-             table {
+            table {
                 word-wrap: break-word!important;
                 table-layout: fixed!important;
                 *{
@@ -124,7 +95,7 @@ $propic-size:200px;
                 background:  $tab-color-1;
             }
             .data {
-                li {
+               li {
                     margin: 5px 4px;
                     background: lighten($color: darkblue, $amount: 65%);
                     border: none;
@@ -167,7 +138,7 @@ $propic-size:200px;
                 font-weight: 500;
                 line-height: 40px;
                 font-size: 27px;
-                height: 40px;
+                
                 width: 100%;
                 //padding-left: 60px;
                 // text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.85);
@@ -193,20 +164,8 @@ $propic-size:200px;
                     font-weight: 600;
                 }
             }
-            .attachments-table {
-                img {
-                    height: 60px;
-                }
-            }
         }
     }
-}
-
-.rtags {
-    //tags for mobile view
-    font-size: 15px!important;
-    color: black!important;
-    margin: 5px 2px!important;
 }
 
 .resume-toolbar {
@@ -215,10 +174,9 @@ $propic-size:200px;
     }
     padding: 15px;
     padding-bottom: 5px;
-    background-image:$noise-low;
-    background-color: lighten($color: #BDC3f7, $amount: 10%);
+    background: lighten($color: $brand-primary, $amount: 35%);
     .btn {
-         margin-left: 10px;
+        margin-left: 10px;
         margin-bottom: 10px;
         .glyphicon {
             margin-right: 10px;

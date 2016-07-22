@@ -192,8 +192,12 @@
     .tool-bar {
         margin-left: 0;
         margin-right: 0;
-        .dropdown{
-            margin-right: 15px;
+        .dropdown {
+            margin-right: 8px;
+        }
+        .sort-by {
+            margin-top: 10px;
+            margin-bottom: 0;
         }
     }
     .table-div {
@@ -219,8 +223,20 @@
                     vertical-align: middle;
                     padding: 10px;
                 }
-                .date {
+              .date {
                     width: 100px;
+                    @media screen and (max-width: $break-sm) {
+                        width: 60px;
+                    }
+                }
+                .app-count {
+                    width: 80px;
+                    text-align: right;
+                    @media screen and (max-width: $break-sm) {
+                        font-size: 11px;
+                        width: 50px;
+                        padding-left: 0px;
+                    }
                 }
                 &:hover {
                     background-color: lighten($color: $brand-primary, $amount: 40%);
@@ -241,8 +257,12 @@
     .tool-bar {
         margin-left: 0;
         margin-right: 0;
-        .dropdown{
-            margin-right: 15px;
+        .dropdown {
+            margin-right: 8px;
+        }
+        .sort-by {
+            margin-top: 10px;
+            margin-bottom: 0;
         }
     }
     .table-div {
@@ -270,16 +290,25 @@
                 }
                 .date {
                     width: 100px;
+                    @media screen and (max-width: $break-sm) {
+                        width: 60px;
+                    }
                 }
                 &:hover {
                     background-color: lighten($color: $brand-primary, $amount: 40%);
                 }
-                &.read{
+                &.disabled {
                     text-decoration: line-through;
-                   opacity: 0.3;
-                   .badge{
-                       display: none;
-                   }
+                    opacity: 0.3;
+                    .badge {
+                        display: none;
+                    }
+                }
+                .count {
+                    width: 50px;
+                    @media screen and (max-width: $break-sm) {
+                        padding: 0;
+                    }
                 }
             }
         }
