@@ -1,5 +1,6 @@
 $(function () {
   adjustments_dash()
+  
 })
 $(window).on('resize', function () {
   adjustments_dash()

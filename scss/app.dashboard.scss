@@ -180,3 +180,61 @@
         padding: 40px 20px;
     }
 }
+
+
+//=============== COVER LETTERS ==============
+.dash-cover {
+    .title {
+        padding-bottom: 15px;
+        h3 {
+            text-align: center;
+        }
+    }
+    .tool-bar {
+        margin-left: 0;
+        margin-right: 0;
+        .dropdown {
+            margin-right: 8px;
+        }
+        .sort-by {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+    .table-div {
+        table {
+            margin-top: 20px;
+            table-layout: fixed;
+            word-wrap: break-word;
+            width: 100%;
+            @media screen and (max-width: $break-sm) {
+                font-size: 13px;
+            }
+            tr {
+                cursor: pointer;
+                background: white;
+                border-bottom: 1px solid gray;
+                th {
+                    padding: 10px;
+                    color: white;
+                    font-weight: 300;
+                    background-color: lighten($color: $brand-primary, $amount: 0%);
+                }
+                td {
+                    vertical-align: middle;
+                    padding: 10px;
+                }
+              .date {
+                    width: 100px;
+                    @media screen and (max-width: $break-sm) {
+                        width: 60px;
+                    }
+                }
+               
+                &:hover {
+                    background-color: lighten($color: $brand-primary, $amount: 40%);
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 $(function () {
   adjustments()
-  top_bar_switcher(false)
+  //top_bar_switcher(false)
   goto_top_switcher(false)
 })
 $(window).on('resize', function () {

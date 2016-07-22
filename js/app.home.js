@@ -1,14 +1,3 @@
-$(function () {
-  adj()
+$(function(){
+  top_bar_switcher(true)
 })
-$(window).on('resize', function () {
-  adj()
-})
-
-function adj () {
- 
-}
-
-function scroll_signup(){
-  
-}
