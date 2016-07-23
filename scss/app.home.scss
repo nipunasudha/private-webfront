@@ -2,6 +2,15 @@
 @import 'colors';
 
 // =========== GENERAL  =======================
-.content{
-    height: 2000px;
+.left-home{
+    height: 1000px;
+    background: $noise;
+    background-color: $brand-primary;
+}
+
+.right-home{
+    
+    height: 1000px;
+    background: $noise;
+    background-color: $brand-success;
 }
